@@ -16,8 +16,53 @@ use App\Http\Controllers\StockController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $data = [
+        'content' => 'home/home/index'
+    ];
+    //return view('home.index');
+    return view('home.layouts.wrapper', $data);
 });
+
+Route::get('/about', function () {
+    $data = [
+        'content' => 'home/about/index'
+    ];
+    //return view('home.index');
+    return view('home.layouts.wrapper', $data);
+});
+
+Route::get('/services', function () {
+    $data = [
+        'content' => 'home/services/index'
+    ];
+    //return view('home.index');
+    return view('home.layouts.wrapper', $data);
+});
+
+Route::get('/blog', function () {
+    $data = [
+        'content' => 'home/blog/index'
+    ];
+    //return view('home.index');
+    return view('home.layouts.wrapper', $data);
+});
+
+Route::get('/contact', function () {
+    $data = [
+        'content' => 'home/contact/index'
+    ];
+    //return view('home.index');
+    return view('home.layouts.wrapper', $data);
+});
+
+Route::get('/faq', function () {
+    $data = [
+        'content' => 'home/faq/index'
+    ];
+    //return view('home.index');
+    return view('home.layouts.wrapper', $data);
+});
+
 
 Auth::routes();
 
