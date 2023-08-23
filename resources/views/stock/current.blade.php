@@ -8,6 +8,7 @@
             <tr>
                 <th>Item Name</th>
                 <th>Stock Amount</th>
+                <th>Weight</th>
                 <!-- Add more columns if needed -->
             </tr>
         </thead>
@@ -16,6 +17,7 @@
                 <tr>
                     <td>{{ $stock->item_name }}</td>
                     <td>{{ $stock->stock_amount }}</td>
+                    <td>{{ $stock->weight }} kg </td>
                     <!-- Add more columns if needed -->
                 </tr>
             @endforeach

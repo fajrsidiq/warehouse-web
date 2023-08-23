@@ -17,6 +17,7 @@ class NewItemController extends Controller
         $validatedData = $request->validate([
             'item_name' => 'required|unique:stocks',
             'stock_amount' => 'nullable|numeric',
+            'weight' => 'nullable|numeric'
         ]);
 
         // Create new stock item

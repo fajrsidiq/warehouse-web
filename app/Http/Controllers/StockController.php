@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -14,10 +15,16 @@ class StockController extends Controller
         return view('stock.current', compact('stocks'));
     }
 
-    public function stockLog()
+
+    public function incomingLog()
     {
-        $stockIns = StockIn::orderBy('created_at', 'desc')->get();
-        $stockOuts = StockOut::orderBy('created_at', 'desc')->get();
-        return view('stock.log', compact('stockIns', 'stockOuts'));
+        $incomingLogs = StockIn::all();
+        return view('stock.incoming_log', compact('incomingLogs'));
+    }
+
+    public function outgoingLog()
+    {
+        $outgoingLogs = StockOut::all();
+        return view('stock.outgoing_log', compact('outgoingLogs'));
     }
 }

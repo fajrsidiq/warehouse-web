@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Stock extends Model
 {
-    protected $fillable = ['item_name', 'stock_amount'];
+    protected $fillable = ['item_name', 'stock_amount', 'weight'];
 
     public $timestamps = false;
     

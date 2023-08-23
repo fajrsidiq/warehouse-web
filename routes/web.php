@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewItemController;
 use App\Http\Controllers\StockController;
+use App\Http\Controllers\StockInController;
+use App\Http\Controllers\StockOutController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -62,3 +65,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/newitem', [NewItemController::class, 'create'])->name('newitem.create');
 Route::post('/newitem', [NewItemController::class, 'store'])->name('newitem.store');
 Route::get('/stock', [StockController::class, 'currentStock'])->name('stock.current');
+Route::get('/stockh1', [StockController::class, 'incomingLog'])->name('logs.incoming');
+Route::get('/stockh2', [StockController::class, 'outgoingLog'])->name('logs.outgoing');
+Route::get('/stockin', [StockInController::class, 'create'])->name('stock.in');
+Route::post('/stockin', [StockInController::class, 'store'])->name('stockin.store');
+Route::get('/stockout', [StockOutController::class, 'create'])->name('stock.out');
+Route::post('/stockout', [StockOutController::class, 'store'])->name('stockout.store');
+

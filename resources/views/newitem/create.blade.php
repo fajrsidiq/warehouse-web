@@ -22,6 +22,11 @@
             <input type="number" name="stock_amount" id="stock_amount">
         </div>
 
-        <button type="submit">Create Item</button>
+        <div class="form-group">
+            <label for="weight">Weight:</label>
+            <input type="number" name="weight" id="weight" step="0.01" min="0">
+        </div>
+
+        <button type="submit">Add Item</button>
     </form>
 @endsection

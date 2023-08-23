@@ -10,7 +10,7 @@ class StockOutController extends Controller
     public function create()
     {
         $items = Stock::all();
-        return view('stockout.create', compact('items'));
+        return view('stock.out', compact('items'));
     }
 
     public function store(Request $request)
@@ -19,6 +19,7 @@ class StockOutController extends Controller
         $validatedData = $request->validate([
             'item_name' => 'required',
             'stock_out_amount' => 'required|numeric',
+            'weight' => 'required|numeric',
             'price' => 'required|numeric',
             'notes' => 'nullable|string',
         ]);
@@ -29,9 +30,10 @@ class StockOutController extends Controller
         // Update stock amount in Stock table
         $stock = Stock::where('item_name', $request->item_name)->first();
         $stock->stock_amount -= $request->stock_out_amount;
+        $stock->weight -= $request->weight;
         $stock->save();
 
-        return redirect()->route('stockout.create')->with('success', 'Stock out recorded successfully.');
+        return redirect()->route('stock.out')->with('success', 'Stock out recorded successfully.');
     }
 }
 

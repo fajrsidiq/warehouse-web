@@ -15,6 +15,7 @@ return new class extends Migration
         $table->id();
         $table->string('item_name')->unique();
         $table->unsignedBigInteger('stock_amount')->default(0);
+        $table->decimal('weight', 10, 2)->default(0);
     });
 }
 
