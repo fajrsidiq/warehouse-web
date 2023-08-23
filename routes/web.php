@@ -31,17 +31,9 @@ Route::get('/about', function () {
     return view('home.layouts.wrapper', $data);
 });
 
-Route::get('/services', function () {
+Route::get('/ikan', function () {
     $data = [
-        'content' => 'home/services/index'
-    ];
-    //return view('home.index');
-    return view('home.layouts.wrapper', $data);
-});
-
-Route::get('/blog', function () {
-    $data = [
-        'content' => 'home/blog/index'
+        'content' => 'home/ikan/index'
     ];
     //return view('home.index');
     return view('home.layouts.wrapper', $data);

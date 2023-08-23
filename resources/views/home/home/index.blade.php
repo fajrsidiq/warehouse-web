@@ -32,7 +32,7 @@
         </div>
         <div class="carousel-item">
             <div class="wrapper-img-banner">
-                <img src="/img/lautbiruperkasa2.jpg" class="img-banner" alt="">
+                <img src="/img/lautbiruperkasa3.jpg" class="img-banner" alt="">
             </div>
             <div class="container">
                 <div class="carousel-caption">
@@ -43,7 +43,7 @@
         </div>
         <div class="carousel-item">
             <div class="wrapper-img-banner">
-                <img src="/img/lautbiruperkasa2.jpg" class="img-banner" alt="">
+                <img src="/img/lautbiruperkasa4.jpg" class="img-banner" alt="">
             </div>
             <div class="container">
                 <div class="carousel-caption text-end">
@@ -105,17 +105,17 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="text-center">
+                        <img src="/img/coldstorage2.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
                         <img src="/img/coldstorage1.jpg" width="100%" alt="">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="text-center">
-                        <img src="/img/lautbiruperkasa3.jpg" width="100%" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <img src="/img/coldstorage2.jpg" width="100%" alt="">
+                        <img src="/img/coldstorage3.jpg" width="100%" alt="">
                     </div>
                 </div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut blanditiis commodi eaque, laborum
@@ -164,86 +164,7 @@
     </div>
 
     <div class="text-center mt-3">
-        <a href="/services" class="btn btn-primary px-5">Selengkapnya <i class="fas fa-arrow-right"></i></a>
-    </div>
-</div>
-
-
-<div class="bg-light my-5">
-    <div class="container py-5">
-        <div class="text-dark text-center">
-            <h4 class="">Pelajari Tentang kami</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut blanditiis commodi eaque, laborum
-                voluptates. Eos nobis laborum itaque architecto neque maiores suscipit dolor repellat incidunt totam
-                delectus tempora qui voluptatibus eligendi obcaecati distinctio labore voluptatum ipsum sint hic
-                iste, nam molestias. Reiciendis quos esse nobis voluptate accusamus soluta tempore.</p>
-        </div>
-    </div>
-</div>
-
-
-<div class="container my-2">
-    <div class="text-center">
-        <h4 class="">E-Katalog</h4>
-        <p>Kabar Seputar Laut Biru Perkasa</p>
-    </div>
-
-    <div class="row">
-        <div class="col-md-3">
-            <div class="card shadow-sm">
-                <div class="wrapper-card-blog">
-                    <img src="/img/lautbiruperkasa2.jpg" class="img-card-blog" alt="">
-                </div>
-                <div class="p-3">
-                    <a href="" class="text-decoration-none"><h5>Ikan Laut Segar Cakalang</h5></a>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, modi?</p>
-                    <a href="">Selengkapnya &RightArrow; </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card shadow-sm">
-                <div class="wrapper-card-blog">
-                    <img src="/img/lautbiruperkasa2.jpg" class="img-card-blog" alt="">
-                </div>
-                <div class="p-3">
-                    <a href="" class="text-decoration-none"><h5>Ikan Laut Segar Cakalang</h5></a>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, modi?</p>
-                    <a href="">Selengkapnya &RightArrow; </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card shadow-sm">
-                <div class="wrapper-card-blog">
-                    <img src="/img/lautbiruperkasa2.jpg" class="img-card-blog" alt="">
-                </div>
-                <div class="p-3">
-                    <a href="" class="text-decoration-none"><h5>Ikan Laut Segar Cakalang</h5></a>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, modi?</p>
-                    <a href="">Selengkapnya &RightArrow; </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card shadow-sm">
-                <div class="wrapper-card-blog">
-                    <img src="/img/lautbiruperkasa2.jpg" class="img-card-blog" alt="">
-                </div>
-                <div class="p-3">
-                    <a href="" class="text-decoration-none"><h5>Ikan Laut Segar Cakalang</h5></a>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, modi?</p>
-                    <a href="">Selengkapnya &RightArrow; </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center mt-3">
-            <a href="" class="btn btn-primary px-5">Selengkapnya <i class="fas fa-arrow-right"></i></a>
-        </div>
+        <a href="/ikan" class="btn btn-primary px-5">Selengkapnya <i class="fas fa-arrow-right"></i></a>
     </div>
 </div>
 
@@ -256,6 +177,9 @@
                 voluptates. Eos nobis laborum itaque architecto neque maiores suscipit dolor repellat incidunt totam
                 delectus tempora qui voluptatibus eligendi obcaecati distinctio labore voluptatum ipsum sint hic
                 iste, nam molestias. Reiciendis quos esse nobis voluptate accusamus soluta tempore.</p>
+        </div>
+        <div class="text-center mt-3">
+            <a href="/about" class="btn btn-primary px-5"> <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
 </div>

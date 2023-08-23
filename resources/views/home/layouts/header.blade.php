@@ -25,12 +25,9 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::is('services') ? 'menu-active' : ''}}" href="/services">Services</a>
+                        <a class="nav-link {{ Request::is('ikan') ? 'menu-active' : ''}}" href="/ikan">Jenis Ikan</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link {{ Request::is('blog') ? 'menu-active' : ''}}" href="/blog">Blog</a>
-                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link {{ Request::is('contact') ? 'menu-active' : ''}}" href="/contact">Contact</a>
