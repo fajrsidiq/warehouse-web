@@ -138,8 +138,8 @@
     <div class="row">
         <div class="col-md-3">
             <div class="text-center">
-                <img src="/img/coldstorage2.jpg" width="100%" alt="">
-                <h5><b>Ikan Tuna</b></h5>
+                <img src="/img/cumi.png" width="100%" alt="">
+                <h5><b>Cumi-cumi</b></h5>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, praesentium.</p>
             </div>
         </div>

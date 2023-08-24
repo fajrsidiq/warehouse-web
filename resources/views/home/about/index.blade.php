@@ -18,7 +18,7 @@
             </div>
             <div class="container">
                 <div class="carousel-caption">
-                    <div class="text-dark">
+                    <div class="text-primary">
                         <h1>Tentang Kami</h1>
                         <h3>Kenali Lebih Lanjut Tentang Laut Biru Perkasa</h3>
                     </div>
