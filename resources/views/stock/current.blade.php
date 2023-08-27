@@ -2,6 +2,12 @@
 
 @section('content')
     <h2>Current Stock</h2>
+    <a href="{{ route('stock.in') }}" class="button-link">
+        <button>Stok Masuk</button>
+    </a>
+    <a href="{{ route('stock.out') }}" class="button-link">
+        <button>Stok Keluar</button>
+    </a>
 
     <table class="table">
         <thead>
@@ -24,4 +30,3 @@
         </tbody>
     </table>
 @endsection
-    

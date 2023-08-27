@@ -1,0 +1,12 @@
+alamat
+
+jam
+-------------
+Pembelian/penjualan
+-------------
+berat kg    nama ikan    harga
+10kg        Tuna         rp....
+....        ....         .....
+-------------
+                         Total
+                         rp....
