@@ -18,7 +18,7 @@
 
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3953.5784524760684!2d109.023602977395!3d-7.72829425673824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6512ec472068bb%3A0x1ad853303ad569c!2s72CF%2BPCC%2C%20Karangmulia%2C%20Tegalkamulyan%2C%20Kec.%20Cilacap%20Sel.%2C%20Kabupaten%20Cilacap%2C%20Jawa%20Tengah!5e0!3m2!1sen!2sid!4v1692286776950!5m2!1sen!2sid"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
 

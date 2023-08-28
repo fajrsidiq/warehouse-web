@@ -8,17 +8,21 @@
         width: 100%;
 
     }
+
+    .justified-text {
+        text-align: justify;
+    }
 </style>
 
 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="wrapper-img-banner">
-                <img src="/img/lautbiruperkasa1.jpg" class="img-banner" alt="">
+                <img src="/img/kolase.png" class="img-banner" alt="">
             </div>
             <div class="container">
                 <div class="carousel-caption">
-                    <div class="text-primary">
+                    <div class="text-light">
                         <h1>Tentang Kami</h1>
                         <h3>Kenali Lebih Lanjut Tentang Laut Biru Perkasa</h3>
                     </div>
@@ -31,16 +35,17 @@
 <div class="container py-3">
     <div class="row">
         <div class="col-md-4">
-            <img src="/img/lautbiruperkasa1.jpg" width="100%" alt="">
+            <img src="/img/lautbiruperkasa.jpg" width="100%" alt="">
         </div>
         <div class="col-md-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quia, repellat asperiores quasi, omnis,
-            doloribus maiores consequatur expedita aliquam aliquid veniam sunt odit nemo eligendi accusamus veritatis
-            officiis quas minima.
+            <p class="justified-text"> Selamat datang di Laut Biru Perkasa, usaha keluarga yang didedikasikan untuk memastikan kesegaran  harta lautan Indonesia tetap terjaga. Dibawah kepemimpinan Pak Sajono, kami bangga menyediakan layanan jasa Coldstorage terbaik di Cilacap. Dengan lokasi strategis di tepi laut, kami berkomitmen untuk menjaga kualitas pelayanan yang tak tertandingi.</p>
+            <p class="justified-text">Kami memahami betapa pentingnya menjaga keutuhan produk laut yang berkualitas, itulah mengapa Laut Biru Perkasa hadir. Dengan pengalaman panjang dan kepercayaan nelayan lokal, kami menjalankan operasi ini dengan teliti dan profesional. Tim kami yang terlatih siap menjaga suhu optimal untuk memastikan produk laut tetap segar hingga sampai ke tangan Anda.</p>
+            <p class="justified-text">Laut Biru Perkasa bukan sekadar tempat penyimpanan, tetapi juga mitra bagi nelayan dan pelanggan kami. Dengan keahlian kami, Anda dapat yakin bahwa produk tangkapan bernilai tinggi akan tetap terjaga mutunya. Terhubunglah dengan kami dan temukan bagaimana kami menjaga tangkapan laut tetap unggul dalam segala keadaan.</p>
         </div>
     </div>
 </div>
 
+<!-- Visi dan Misi
 <div class="bg-light mt-4">
     <div class="container py-5">
         <div class="text-dark text-center">
@@ -55,6 +60,7 @@
         <p>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maxime!</p>
     </div>
 </div>
+-->
 
 <div class="bg-primary">
     <div class="container py-5">
@@ -79,12 +85,7 @@
                         <img src="/img/coldstorage3.jpg" width="100%" alt="">
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut blanditiis commodi eaque, laborum
-                    voluptas
-                    voluptates. Eos nobis laborum itaque architecto neque maiores suscipit dolor repellat incidunt totam
-                    delectus tempora qui voluptatibus eligendi obcaecati distinctio labore voluptatum ipsum sint hic
-                    iste,
-                    nam molestias. Reiciendis quos esse nobis voluptate accusamus soluta tempore.</p>
+                <p class="justified-text">Jasa Coldstorage adalah solusi esensial untuk menjaga kesegaran dan kualitas produk yang memerlukan suhu terkendali. Laut Biru Perkasa menghadirkan layanan Coldstorage dengan penuh dedikasi, memberikan lingkungan ideal untuk produk laut agar tetap segar dan berkualitas optimal. Dalam Coldstorage kami, suhu yang tepat dijaga dengan ketat, mencegah kerusakan dan penurunan mutu akibat fluktuasi panas. Dari ikan segar hingga hasil laut lainnya, produk Anda disimpan dalam kondisi yang menjaga kesegaran alami dan nilai gizi. Teknologi canggih dan sistem monitoring terkini mengawasi setiap detail, memberi Anda keyakinan bahwa produk Anda berada dalam tangan yang aman.Tim profesional kami memahami betapa berharganya setiap produk yang disimpan. Dengan pengalaman yang kaya dan dedikasi untuk keunggulan, kami siap memberikan layanan Coldstorage yang melampaui harapan Anda. Jadi, percayakan produk laut Anda kepada kami, dan nikmati keuntungan dari jasa Coldstorage Laut Biru Perkasa yang menjaga kesegaran demi masa depan yang lebih segar.</p>
             </div>
         </div>
     </div>
@@ -95,11 +96,12 @@
         <div class="text-center">
             <h4 class="">Struktur Organisasi</h4>
             <p>Laut Biru Perkasa</p>
-            <img src="/img/coldstorage1.jpg" width="50%" height="50%" alt="">
+            <img src="/img/struktur.png" width="100%" height="100%" alt="">
         </div>
     </div>
 </div>
 
+<!-- Untuk Piagam atau Penghargaan yang telah diraih
 <div class="bg-light">
     <div class="container py-5">
         <div class="text-dark text-center mb-5">
@@ -114,25 +116,26 @@
             </div>
             <div class="col-md-3">
                 <div class="text-center">
-                    <i class="fas fa-trophy fa-3x text-primary"></i>
+                    <img src="/img/coldstorage2.jpg" width="100%" alt="">
                     <h5>Prestasi 2</h5>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="text-center">
-                    <i class="fas fa-trophy fa-3x text-primary"></i>
+                    <img src="/img/coldstorage2.jpg" width="100%" alt="">
                     <h5>Prestasi 3</h5>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="text-center">
-                    <i class="fas fa-trophy fa-3x text-primary"></i>
+                    <img src="/img/coldstorage2.jpg" width="100%" alt="">
                     <h5>Prestasi 4</h5>
                 </div>
             </div>
         </div>
     </div>
 </div>
+-->
 
 <div class="container mt-5">
     <div class="text-center">
@@ -145,7 +148,7 @@
         <h4 class="mb-4">Temui Kami Langsung di</h4>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3953.5784524760684!2d109.023602977395!3d-7.72829425673824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6512ec472068bb%3A0x1ad853303ad569c!2s72CF%2BPCC%2C%20Karangmulia%2C%20Tegalkamulyan%2C%20Kec.%20Cilacap%20Sel.%2C%20Kabupaten%20Cilacap%2C%20Jawa%20Tengah!5e0!3m2!1sen!2sid!4v1692286776950!5m2!1sen!2sid"
-            width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </div>
