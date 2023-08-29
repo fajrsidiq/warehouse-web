@@ -15,23 +15,25 @@ class StockOutController extends Controller
 
     public function store(Request $request)
     {
-        // Validate input
-        $validatedData = $request->validate([
-            'item_name' => 'required',
-            'stock_out_amount' => 'required|numeric',
-            'weight' => 'required|numeric',
-            'price' => 'required|numeric',
-            'notes' => 'nullable|string',
-        ]);
+        $entries = $request->input('entries');
 
-        // Store stock out data
-        StockOut::create($validatedData);
-
-        // Update stock amount in Stock table
-        $stock = Stock::where('item_name', $request->item_name)->first();
-        $stock->stock_amount -= $request->stock_out_amount;
-        $stock->weight -= $request->weight;
-        $stock->save();
+        foreach ($entries as $entry) {
+            $validatedData = validator($entry, [
+                'item_name' => 'required',
+                'stock_out_amount' => 'required|numeric',
+                'weight' => 'required|numeric',
+                'price' => 'required|numeric',
+                'notes' => 'nullable|string',
+            ])->validate();
+    
+            StockOut::create($validatedData);
+    
+            // Update stock amount in Stock table
+            $stock = Stock::where('item_name', $entry['item_name'])->first();
+            $stock->stock_amount -= $entry['stock_out_amount'];
+            $stock->weight -= $entry['weight'];
+            $stock->save();
+        }
 
         return redirect()->route('stock.out')->with('success', 'Stock out recorded successfully.');
     }

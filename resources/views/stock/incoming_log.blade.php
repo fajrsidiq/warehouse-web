@@ -1,7 +1,34 @@
 @extends('layouts.app')
 
 @section('content')
+    <style>
+        .text-link {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .text-link.active {
+            font-weight: bold;
+        }
+
+        .text-link.disabled {
+            color: black;
+            cursor: default;
+            text-decoration: none;
+        }
+    </style>
+
     <h2>Incoming Stock Logs</h2>
+
+    <div class="mb-3">
+        <a href="{{ route('logs.incoming') }}?sort=latest"
+            class="text-link @if ($sort === 'latest') active disabled @endif">Sort by Latest</a> |
+        <a href="{{ route('logs.incoming') }}?sort=item"
+            class="text-link @if ($sort === 'item') active disabled @endif">Sort by Item Name</a>
+    </div>
+
+
 
     <table class="table">
         <thead>
@@ -15,12 +42,12 @@
             </tr>
         </thead>
         <tbody>
-            @foreach($incomingLogs as $log)
+            @foreach ($incomingLogs as $log)
                 <tr>
                     <td>{{ $log->created_at }}</td>
                     <td>{{ $log->item_name }}</td>
                     <td>{{ $log->stock_in_amount }}</td>
-                    <td>{{ $log->weight}}</td>
+                    <td>{{ $log->weight }}</td>
                     <td>{{ $log->price }}</td>
                     <td>{{ $log->notes }}</td>
                 </tr>

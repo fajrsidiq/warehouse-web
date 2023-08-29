@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -14,27 +15,28 @@ class StockInController extends Controller
     }
 
     public function store(Request $request)
-{
-    // Validate input
-    $validatedData = $request->validate([
-        'item_name' => 'required',
-        'stock_in_amount' => 'required|numeric',
-        'weight' => 'required|numeric', 
-        'price' => 'required|numeric',
-        'notes' => 'nullable|string',
-    ]);
+    {
+        $entries = $request->input('entries');
 
-    // Store stock in data
-    StockIn::create($validatedData);
+        // Validate input
+        foreach ($entries as $entry) {
+            $validatedData = validator($entry, [
+                'item_name' => 'required',
+                'stock_in_amount' => 'required|numeric',
+                'weight' => 'required|numeric',
+                'price' => 'required|numeric',
+                'notes' => 'nullable|string',
+            ])->validate();
 
-    // Update stock amount and weight in Stock table
-    $stock = Stock::where('item_name', $request->item_name)->first();
-    $stock->stock_amount += $request->stock_in_amount;
-    $stock->weight += $request->weight;
-    $stock->save();
+            // Store stock in data
+            StockIn::create($validatedData);
 
-    return redirect()->route('stock.in')->with('success', 'Stock in recorded successfully.');
-}
-
-    
+            // Update stock amount and weight in Stock table
+            $stock = Stock::where('item_name', $entry['item_name'])->first();
+            $stock->stock_amount += $entry['stock_in_amount'];
+            $stock->weight += $entry['weight'];
+            $stock->save();
+        }
+        return redirect()->route('stock.in')->with('success', 'Stock in recorded successfully.');
+    }
 }
