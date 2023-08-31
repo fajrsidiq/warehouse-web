@@ -1,16 +1,16 @@
 <div class="container">
 
     <div class="text-center my-5">
-        <h4 class="">Kontak Kami</h4>
-        <p>Berikan Saran dan Masukkan untuk Kami</p>
+        <h2 class="">Kontak Kami</h2>
+        <h4>Berikan Saran dan Masukkan untuk Kami</h4>
     </div>
 
     <div class="text-center my-5">
         <i class="fas fa-phone fa-2x px-3"></i>
-        <h3 class="mb-5">0812xxxxxxxx</h3>
+        <h3 class="mb-5">081394060849</h3>
 
         <i class="fas fa-envelope fa-2x px-3"></i>
-        <h3 class="mb-5">lautbiruperkasa@gmail.com</h3>
+        <h3 class="mb-5">udlautbiruperkasa@gmail.com</h3>
 
         <i class="fas fa-map-marker fa-2x px-3"></i>
         <h3 class="mb-5">72CF+PCC, Karangmulia, Tegalkamulyan, Kec. Cilacap Sel., Kabupaten Cilacap, Jawa Tengah,

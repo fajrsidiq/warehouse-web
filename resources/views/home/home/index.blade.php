@@ -21,7 +21,7 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="wrapper-img-banner">
-                <img src="/img/lautbiruperkasa2.jpg" class="img-banner" alt="">
+                <img src="/img/banner1.jpg" class="img-banner" alt="">
             </div>
             <div class="container">
                 <div class="carousel-caption text-start">
@@ -32,7 +32,7 @@
         </div>
         <div class="carousel-item">
             <div class="wrapper-img-banner">
-                <img src="/img/lautbiruperkasa3.jpg" class="img-banner" alt="">
+                <img src="/img/banner2.jpg" class="img-banner" alt="">
             </div>
             <div class="container">
                 <div class="carousel-caption">
@@ -43,7 +43,7 @@
         </div>
         <div class="carousel-item">
             <div class="wrapper-img-banner">
-                <img src="/img/lautbiruperkasa4.jpg" class="img-banner" alt="">
+                <img src="/img/banner3.jpg" class="img-banner" alt="">
             </div>
             <div class="container">
                 <div class="carousel-caption text-end">
@@ -73,29 +73,36 @@
 
 <div class="container mt-5">
     <div class="text-center">
-        <h4 class="">About</h4>
-        <p>Izinkan Kami Memperkenalkan Diri</p>
+        <h2 class="">About Us</h2>
+        <p>____________________________</p>
     </div>
 
     <div class="row">
         <div class="col-md-6">
-            <img src="/img/lautbiruperkasa1.jpg" width="100%" alt="">
+            <img src="/img/lautbiruperkasa2.jpg" width="100%" alt="">
         </div>
         <div class="col-md-6">
-            <p class="justified-text"> Selamat datang di Laut Biru Perkasa, usaha keluarga yang didedikasikan untuk memastikan kesegaran  harta lautan Indonesia tetap terjaga. Dibawah kepemimpinan Pak Sajono, kami bangga menyediakan layanan jasa Coldstorage terbaik di Cilacap. Dengan lokasi strategis di tepi laut, kami berkomitmen untuk menjaga kualitas pelayanan yang tak tertandingi.</p>
-            <p class="justified-text">Kami memahami betapa pentingnya menjaga keutuhan produk laut yang berkualitas, itulah mengapa Laut Biru Perkasa hadir. Dengan pengalaman panjang dan kepercayaan nelayan lokal, kami menjalankan operasi ini dengan teliti dan profesional. Tim kami yang terlatih siap menjaga suhu optimal untuk memastikan produk laut tetap segar hingga sampai ke tangan Anda.</p>
-            <p class="justified-text">Laut Biru Perkasa bukan sekadar tempat penyimpanan, tetapi juga mitra bagi nelayan dan pelanggan kami. Dengan keahlian kami, Anda dapat yakin bahwa produk tangkapan bernilai tinggi akan tetap terjaga mutunya. Terhubunglah dengan kami dan temukan bagaimana kami menjaga tangkapan laut tetap unggul dalam segala keadaan.</p>
+            <h4 class="justified-text"> Selamat datang di Laut Biru Perkasa, kami berkomitmen menjaga kesegaran harta
+                lautan Indonesia. Dibawah kepemimpinan Pak Sajono, layanan jual beli ikan laut berkualitas tinggi di
+                Cilacap. Dengan fasilitas penyimpanan dan pengalaman nelayan lokal, produk tetap segar hingga tangan
+                Anda. Kami menyediakan jasa pengiriman yang handal dan suhu terkendali. Selain jual beli, layanan
+                penyimpanan Coldstorage (CS) dan Air Blast Freezing (ABF) juga kami tawarkan. Keahlian kami menjamin
+                produk tetap berkualitas. Dedikasi kami untuk kesegaran dan kualitas berperan dalam menjaga kelezatan
+                produk laut. Bergabunglah dengan Laut Biru Perkasa dalam menjaga kekayaan lautan bersama</h4>
+        </div>
+        <div class="text-center py-3">
+            <a href="/ikan" class="btn btn-primary px-5">Selanjutnya<i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
 </div>
 
 
-<div class="bg-primary my-5">
+<div class="bg-primary">
     <div class="container py-5">
         <div class="text-white">
             <div class="text-center">
-                <h4 class="">Kami Menyediakan</h4>
-                <p>COLD STORAGE</p>
+                <h2 class="">Kami Juga Menyediakan</h2>
+                <h4>COLD STORAGE (CS)</h4>
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -113,8 +120,78 @@
                         <img src="/img/coldstorage3.jpg" width="100%" alt="">
                     </div>
                 </div>
-                <div class="col-py-3">
-                    <p class="justified-text">Jasa Coldstorage adalah solusi esensial untuk menjaga kesegaran dan kualitas produk yang memerlukan suhu terkendali. Laut Biru Perkasa menghadirkan layanan Coldstorage dengan penuh dedikasi, memberikan lingkungan ideal untuk produk laut agar tetap segar dan berkualitas optimal. Dalam Coldstorage kami, suhu yang tepat dijaga dengan ketat, mencegah kerusakan dan penurunan mutu akibat fluktuasi panas. Dari ikan segar hingga hasil laut lainnya, produk Anda disimpan dalam kondisi yang menjaga kesegaran alami dan nilai gizi. Teknologi canggih dan sistem monitoring terkini mengawasi setiap detail, memberi Anda keyakinan bahwa produk Anda berada dalam tangan yang aman.Tim profesional kami memahami betapa berharganya setiap produk yang disimpan. Dengan pengalaman yang kaya dan dedikasi untuk keunggulan, kami siap memberikan layanan Coldstorage yang melampaui harapan Anda. Jadi, percayakan produk laut Anda kepada kami, dan nikmati keuntungan dari jasa Coldstorage Laut Biru Perkasa yang menjaga kesegaran demi masa depan yang lebih segar.</p>
+                <h5 class="justified-text">Jasa Coldstorage adalah solusi esensial untuk menjaga kesegaran dan kualitas
+                    produk yang memerlukan suhu terkendali. Laut Biru Perkasa menghadirkan layanan Coldstorage dengan
+                    penuh dedikasi, memberikan lingkungan ideal untuk produk laut agar tetap segar dan berkualitas
+                    optimal.</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-info">
+    <div class="container py-5">
+        <div class="text-white">
+            <div class="text-center">
+                <h4>AIR BLAST FREZIING (ABF)</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="/img/coldstorage2.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="/img/coldstorage1.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="/img/coldstorage3.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <h5 class="justified-text">Jasa Air Blast Freezing adalah solusi canggih yang kami tawarkan untuk
+                    memastikan tangkapan laut Anda tetap segar dengan sempurna. Proses Air Blast Freezing melibatkan
+                    penggunaan udara super dingin yang ditiupkan dengan tekanan tinggi pada produk, membekukan produk
+                    dengan cepat dan merata.</h5>
+                <div class="text-center mt-3">
+                    <a href="/coldstorage" class="btn btn-info px-5"> <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-light">
+    <div class="container py-5">
+        <div class="text-dark">
+            <div class="text-center">
+                <h2 class="">Jasa Pengiriman</h2>
+                <h4>Ikan Segar</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="/img/truk1.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="/img/mobil.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="/img/truk3.png" width="100%" alt="">
+                    </div>
+                </div>
+                <h5 class="justified-text">Jasa Air Blast Freezing adalah solusi canggih yang kami tawarkan untuk
+                    memastikan tangkapan laut Anda tetap segar dengan sempurna. Proses Air Blast Freezing melibatkan
+                    penggunaan udara super dingin yang ditiupkan dengan tekanan tinggi pada produk, membekukan produk
+                    dengan cepat dan merata.</h5>
+                <div class="text-center mt-3">
+                    <a href="/kirim" class="btn btn-light px-5"> <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -124,43 +201,44 @@
 
 <div class="container my-4">
     <div class="text-center">
-        <h4 class="">Jenis Ikan</h4>
-        <p>Jenis ikan apa saja yang kami sediakan ?</p>
+        <h4 class="">Jenis Ikan yang Kami Sediakan</h4>
+        <p>____________________________________________________________</p>
     </div>
     <div class="row">
-        <div class="col-md-3 my-3">
-            <div class="text-center">
-                <img src="/img/cakalang.png" width="100%" alt="">
-                <h5><b>Ikan Cakalang</b></h5>
-                <p class="justified-text">Ikan Cakalang merupakan ikan pesisir yang penuh dengan kelezatan. Terkenal akan cita rasa khasnya yang gurih dan lezat saat diolah sebagai abon atau lauk. Mengandung protein tinggi dan rendah lemak, memberikan manfaat baik bagi pertumbuhan dan kesehatan. Terkenal dalam masakan tradisional dan modern, cakalang memberi sentuhan lezat pada hidangan.</p>
+        <div class="row mt-5">
+            <div class="col-md-3 my-3">
+                <div class="text-center">
+                    <img src="/img/cakalang.png" width="100%" alt="">
+                    <h5><b>Ikan Cakalang</b></h5>
+                    <h5><i>(Katsuwonus pelamis)</i></h5>
+                </div>
             </div>
-        </div>
 
-        <div class="col-md-3 my-3">
-            <div class="text-center">
-                <img src="/img/tunabluefin.png" width="100%" alt="">
-                <h5><b>Ikan Tuna Blue Fin</b></h5>
-                <p class="justified-text">Tuna Blue Fin merupakan mahakarya samudera yang megah. memiliki daging merah gelap yang lezat. Kaya akan omega-3 dan protein, mendukung kesehatan jantung dan otak. Kelezatannya dalam sushi dan sashimi sangat diakui di seluruh dunia.</p>
+            <div class="col-md-3 my-3">
+                <div class="text-center">
+                    <img src="/img/tunabluefin.png" width="100%" alt="">
+                    <h5><b>Ikan Tuna Blue Fin</b></h5>
+                    <h5><i>(Thunnus thynnus)</i></h5>
+                </div>
             </div>
-        </div>
 
-        <div class="col-md-3 my-3">
-            <div class="text-center">
-                <img src="/img/tunayellowfin.png" width="100%" alt="">
-                <h5><b>Ikan Tuna Yellow Fin</b></h5>
-                <p class="justified-text">Tuna Yellow Fin, primadona laut biru. menawarkan daging merah muda yang lezat, kaya sumber protein dan rendah lemak. Kandungan vitamin dan mineralnya mendukung sistem kekebalan tubuh. Terkenal nikmat dijadikan steak premium,salad segar, dan sushi. Memberikan manfaat gizi dan kenikmatan kuliner yang seimbang.</p>
+            <div class="col-md-3 my-3">
+                <div class="text-center">
+                    <img src="/img/tunayellowfin.png" width="100%" alt="">
+                    <h5><b>Ikan Tuna Yellow Fin</b></h5>
+                    <h5><i>(Thunnus albacares)</i></h5>
+                </div>
             </div>
-        </div>
 
-        <div class="col-md-3 my-3">
-            <div class="text-center">
-                <img src="/img/gindara.png" width="100%" alt="">
-                <h5><b>Ikan Gindara</b></h5>
-                <p class="justified-text">Ikan Gindara sering juga disebut sebagai ikan kesehatan dikarenakan memiliki manfaat dan khasiat untuk mencuci usus dikarenakan memiliki kandungan minyak yang baik untuk membantu pencernaan. Termasuk salah satu ikan yang sering direkomendasikan untuk pasien yang sehabis melakukan operasi atau yang sedang melakukan pemulihan kesehatan.</p>
+            <div class="col-md-3 my-3">
+                <div class="text-center">
+                    <img src="/img/gindara.png" width="100%" alt="">
+                    <h5><b>Ikan Gindara</b></h5>
+                    <h5><i>(Lepidocybium flavobrunneum)</i></h5>
+                </div>
             </div>
         </div>
     </div>
-
     <div class="text-center mt-3">
         <a href="/ikan" class="btn btn-primary px-5">Selengkapnya <i class="fas fa-arrow-right"></i></a>
     </div>
@@ -171,7 +249,11 @@
     <div class="container py-5">
         <div class="text-white">
             <h4 class="mb-3">Pelajari Tentang kami</h4>
-            <p class="justified-text">Kami mengundang Anda untuk menjelajahi lebih dalam tentang esensi kami sebagai mitra terpercaya dalam menjaga kesegaran produk laut. Dari deskripsi usaha hingga jasa Coldstorage, struktur organisasi yang menggerakkan setiap langkah kami, hingga cara menghubungi kami secara langsung. Semuanya tersedia di sini untuk memberikan wawasan menyeluruh tentang apa yang membuat Laut Biru Perkasa menjadi pilihan yang tepat bagi Anda. </p>
+            <p class="justified-text">Kami mengundang dan menyambut Anda untuk menjelajahi lebih dalam tentang esensi
+                kami sebagai mitra terpercaya dalam menjaga kesegaran produk laut. Mulai dari deskripsi usaha, layanan
+                usaha, jual beli, jasa Coldstorage, struktur organisasi, hingga cara menghubungi kami secara langsung.
+                Semuanya tersedia di sini untuk memberikan wawasan menyeluruh tentang apa yang membuat Laut Biru Perkasa
+                menjadi pilihan yang tepat bagi Anda. </p>
         </div>
         <div class="text-center mt-3">
             <a href="/about" class="btn btn-primary px-5"> <i class="fas fa-arrow-right"></i></a>
@@ -183,8 +265,11 @@
     <div class="text-center">
         <h3>Hubungi Kami</h3>
         <p>Anda Dapat Bertanya Langsung Kepada Kami</p>
-        <a href="" class="btn btn-success px-5" target="blank"><i class="fas fa-phone"></i> Hubungi Kami di WhatsApp</a>
+        <a href="https://wa.me/+6281394060849" class="btn btn-success px-5" target="blank"><i
+                class="fas fa-phone"></i> Hubungi Kami di WhatsApp</a>
         <h5>Atau</h5>
-        <a href="" class="btn btn-danger px-5" target="blank"><i class="fas fa-envelope"></i> Hubungi Kami di Gmail</a>
+        <!--<a href="mailto:udlautbiruperkasa@gmail.com" class="btn btn-danger px-5" target="blank"><i
+                class="fas fa-envelope"></i> Hubungi Kami di Gmail</a>-->
+        <div class="email-text">udlautbiruperkasa@gmail.com</div>
     </div>
 </div>

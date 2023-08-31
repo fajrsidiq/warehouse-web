@@ -27,3 +27,18 @@
     display: flex;
     justify-content: center;
 }
+
+  .email-text {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 300px;
+    margin: 0 auto;
+  }

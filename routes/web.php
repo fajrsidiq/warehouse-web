@@ -34,6 +34,14 @@ Route::get('/about', function () {
     return view('home.layouts.wrapper', $data);
 });
 
+Route::get('/coldstorage', function () {
+    $data = [
+        'content' => 'home/coldstorage/index'
+    ];
+    return view('home.layouts.wrapper', $data);
+});
+
+
 Route::get('/ikan', function () {
     $data = [
         'content' => 'home/ikan/index'
@@ -41,6 +49,14 @@ Route::get('/ikan', function () {
     //return view('home.index');
     return view('home.layouts.wrapper', $data);
 });
+
+Route::get('/kirim', function () {
+    $data = [
+        'content' => 'home/kirim/index'
+    ];
+    return view('home.layouts.wrapper', $data);
+});
+
 
 Route::get('/contact', function () {
     $data = [

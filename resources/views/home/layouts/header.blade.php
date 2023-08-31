@@ -25,9 +25,16 @@
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link {{ Request::is('coldstorage') ? 'menu-active' : ''}}" href="coldstorage">Coldstorage</a>   
+                    </li>                    
+
+                    <li class="nav-item">
                         <a class="nav-link {{ Request::is('ikan') ? 'menu-active' : ''}}" href="/ikan">Jenis Ikan</a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link {{ Request::is('kirim') ? 'menu-active' : '' }}" href="/kirim">Pengiriman</a>
+                    </li>   
 
                     <li class="nav-item">
                         <a class="nav-link {{ Request::is('contact') ? 'menu-active' : ''}}" href="/contact">Contact</a>

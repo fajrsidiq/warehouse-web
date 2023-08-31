@@ -12,6 +12,11 @@
     .justified-text {
         text-align: justify;
     }
+
+    .justified-text.custom {
+        text-align: justify;
+        font-size: 18px;
+    }
 </style>
 
 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -23,7 +28,7 @@
             <div class="container">
                 <div class="carousel-caption">
                     <div class="text-light">
-                        <h1>Tentang Kami</h1>
+                        <h1>About Us</h1>
                         <h3>Kenali Lebih Lanjut Tentang Laut Biru Perkasa</h3>
                     </div>
                 </div>
@@ -35,12 +40,34 @@
 <div class="container py-3">
     <div class="row">
         <div class="col-md-4">
-            <img src="/img/lautbiruperkasa.jpg" width="100%" alt="">
+            <img src="/img/lautbiruperkasa1.jpg" width="100%" alt="">
         </div>
         <div class="col-md-8">
-            <p class="justified-text"> Selamat datang di Laut Biru Perkasa, usaha keluarga yang didedikasikan untuk memastikan kesegaran  harta lautan Indonesia tetap terjaga. Dibawah kepemimpinan Pak Sajono, kami bangga menyediakan layanan jasa Coldstorage terbaik di Cilacap. Dengan lokasi strategis di tepi laut, kami berkomitmen untuk menjaga kualitas pelayanan yang tak tertandingi.</p>
-            <p class="justified-text">Kami memahami betapa pentingnya menjaga keutuhan produk laut yang berkualitas, itulah mengapa Laut Biru Perkasa hadir. Dengan pengalaman panjang dan kepercayaan nelayan lokal, kami menjalankan operasi ini dengan teliti dan profesional. Tim kami yang terlatih siap menjaga suhu optimal untuk memastikan produk laut tetap segar hingga sampai ke tangan Anda.</p>
-            <p class="justified-text">Laut Biru Perkasa bukan sekadar tempat penyimpanan, tetapi juga mitra bagi nelayan dan pelanggan kami. Dengan keahlian kami, Anda dapat yakin bahwa produk tangkapan bernilai tinggi akan tetap terjaga mutunya. Terhubunglah dengan kami dan temukan bagaimana kami menjaga tangkapan laut tetap unggul dalam segala keadaan.</p>
+            <h4 class="justified-text"> Selamat datang di Laut Biru Perkasa, sebuah usaha dagang yang didedikasikan
+                untuk memastikan kesegaran harta lautan Indonesia tetap terjaga. Dibawah kepemimpinan Pak Sajono, kami
+                bangga menyediakan layanan jual beli ikan laut dengan kualitas terbaik di Cilacap. Dengan lokasi
+                strategis di tepi laut dan fasilitas penyimpanan yang kami punya, kami berkomitmen untuk menjaga
+                kualitas pelayanan yang tak tertandingi.</h4>
+            <p></p>
+            <p class="justified-text custom">Kami memahami betapa pentingnya menjaga keutuhan produk laut yang berkualitas,
+                itulah mengapa Laut Biru Perkasa hadir. Dengan pengalaman panjang dan kepercayaan nelayan lokal, kami
+                menjalankan operasi ini dengan teliti dan profesional. Tim kami yang terlatih siap menjaga suhu optimal
+                untuk memastikan produk laut tetap segar hingga sampai ke tangan Anda.</p>
+            <p class="justified-text">Kami menjalankan layanan jual beli ikan segar yang dapat menjembatani nelayan
+                berbakat dengan para pencinta ikan laut. Melalui proses yang cermat dan selektif, kami memastikan ikan
+                segar terbaik mencapai tangan Anda. Kualitas, kebersihan, dan kesegaran adalah prinsip utama dalam
+                setiap transaksi kami.</p>
+            <p class="justified-text custom">Tidak hanya itu, kami juga menyediakan jasa pengiriman yang handal dan tepat
+                waktu. Produk yang Anda beli akan diantar dengan hati-hati dan dengan suhu terkendali, memastikan
+                kualitasnya tetap terjaga hingga tiba di tempat Anda. Keunggulan dalam pengiriman adalah bagian integral
+                dari komitmen kami untuk memberikan pengalaman berbelanja yang tak terlupakan.</p>
+            <p class="justified-text custom">Laut Biru Perkasa bukan hanya sekadar tempat jual beli hasil tangkapan laut, namun
+                kami juga menyediakan jasa penyimpanan Coldstorage (CS) dan Air Blast Freezing (ABF) . Dengan keahlian
+                kami, Anda dapat yakin bahwa produk tangkapan bernilai tinggi akan tetap terjaga mutunya.</p>
+            <p class="justified-text custom">Dengan dedikasi kami yang tak henti-hentinya untuk kesegaran dan kualitas, kami
+                berharap dapat terus menjadi mitra andal Anda dalam menikmati kekayaan bumi di bawah gelombang biru.
+                Laut Biru Perkasa menyambut dengan senang hati mitra baru, bekerjasamalah dengan kami dalam menjaga
+                tangkapan laut tetap unggul dalam segala keadaan.</p>
         </div>
     </div>
 </div>
@@ -66,8 +93,8 @@
     <div class="container py-5">
         <div class="text-white">
             <div class="text-center">
-                <h4 class="">Kami Menyediakan</h4>
-                <p>COLD STORAGE</p>
+                <h2 class="">Kami Juga Menyediakan</h2>
+                <h4>COLD STORAGE (CS)</h4>
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -85,7 +112,73 @@
                         <img src="/img/coldstorage3.jpg" width="100%" alt="">
                     </div>
                 </div>
-                <p class="justified-text">Jasa Coldstorage adalah solusi esensial untuk menjaga kesegaran dan kualitas produk yang memerlukan suhu terkendali. Laut Biru Perkasa menghadirkan layanan Coldstorage dengan penuh dedikasi, memberikan lingkungan ideal untuk produk laut agar tetap segar dan berkualitas optimal. Dalam Coldstorage kami, suhu yang tepat dijaga dengan ketat, mencegah kerusakan dan penurunan mutu akibat fluktuasi panas. Dari ikan segar hingga hasil laut lainnya, produk Anda disimpan dalam kondisi yang menjaga kesegaran alami dan nilai gizi. Teknologi canggih dan sistem monitoring terkini mengawasi setiap detail, memberi Anda keyakinan bahwa produk Anda berada dalam tangan yang aman.Tim profesional kami memahami betapa berharganya setiap produk yang disimpan. Dengan pengalaman yang kaya dan dedikasi untuk keunggulan, kami siap memberikan layanan Coldstorage yang melampaui harapan Anda. Jadi, percayakan produk laut Anda kepada kami, dan nikmati keuntungan dari jasa Coldstorage Laut Biru Perkasa yang menjaga kesegaran demi masa depan yang lebih segar.</p>
+                <h5 class="justified-text">Jasa Coldstorage adalah solusi esensial untuk menjaga kesegaran dan kualitas
+                    produk yang memerlukan suhu terkendali. Laut Biru Perkasa menghadirkan layanan Coldstorage dengan
+                    penuh dedikasi, memberikan lingkungan ideal untuk produk laut agar tetap segar dan berkualitas
+                    optimal.</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-info">
+    <div class="container py-5">
+        <div class="text-white">
+            <div class="text-center">
+                <h4>AIR BLAST FREZIING (ABF)</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="/img/abf1.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="/img/abf3.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="/img/abf2.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <h5 class="justified-text">Jasa Air Blast Freezing adalah solusi canggih yang kami tawarkan untuk memastikan tangkapan laut Anda tetap segar dengan sempurna. Proses Air Blast Freezing melibatkan penggunaan udara super dingin yang ditiupkan dengan tekanan tinggi pada produk, membekukan produk dengan cepat dan merata.</h5>
+                <div class="text-center mt-3">
+                    <a href="/kirim" class="btn btn-info px-5"> <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-light">
+    <div class="container py-5">
+        <div class="text-dark">
+            <div class="text-center">
+                <h2 class="">Jasa Pengiriman</h2>
+                <h4>Ikan Segar</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="/img/truk1.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="/img/mobil.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="/img/truk3.png" width="100%" alt="">
+                    </div>
+                </div>
+                <h5 class="justified-text">Jasa Air Blast Freezing adalah solusi canggih yang kami tawarkan untuk memastikan tangkapan laut Anda tetap segar dengan sempurna. Proses Air Blast Freezing melibatkan penggunaan udara super dingin yang ditiupkan dengan tekanan tinggi pada produk, membekukan produk dengan cepat dan merata.</h5>
+                <div class="text-center mt-3">
+                    <a href="/kirim" class="btn btn-light px-5"> <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
     </div>
@@ -94,8 +187,8 @@
 <div class="container py-5">
     <div class="text-dark">
         <div class="text-center">
-            <h4 class="">Struktur Organisasi</h4>
-            <p>Laut Biru Perkasa</p>
+            <h2 class="">Struktur Organisasi</h2>
+            <h4 class="mb-3">Laut Biru Perkasa</h4>
             <img src="/img/struktur.png" width="100%" height="100%" alt="">
         </div>
     </div>
@@ -139,12 +232,17 @@
 
 <div class="container mt-5">
     <div class="text-center">
-        <h3>Hubungi Kami</h3>
-        <p>Anda Dapat Bertanya Langsung Kepada Kami</p>
-        <a href="https://wa.me/No WA Laut Biru Perkasa" class="btn btn-success px-5" target="blank"><i class="fas fa-phone"></i> Hubungi Kami di WhatsApp</a>
-        <h5 class="py-3">Atau</h5>
-        <a href="mailto:lautbiruperkasa@gmail.com" class="btn btn-danger px-5" target="blank"><i class="fas fa-envelope"></i> Hubungi Kami di Gmail</a>
-        <h5 class="py-3">Atau</h5>
+        <h2>Hubungi Kami</h2>
+        <h4 class="mb-4">Anda Dapat Bertanya Langsung Kepada Kami</h4>
+        <a href="https://wa.me/+6281394060849" class="btn btn-success px-5" target="blank"><i
+                class="fas fa-phone"></i>
+            Hubungi Kami di WhatsApp</a>
+        <h5 class="py-2">Atau</h5>
+        <!--<a href="mailto:udlautbiruperkasa@gmail.com" class="btn btn-danger px-5" target="blank"><i
+                class="fas fa-envelope"></i> Hubungi Kami di Gmail</a>-->
+        <div class="email-text">udlautbiruperkasa@gmail.com</div>
+
+        <h5 class="py-2">Atau</h5>
         <h4 class="mb-4">Temui Kami Langsung di</h4>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3953.5784524760684!2d109.023602977395!3d-7.72829425673824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6512ec472068bb%3A0x1ad853303ad569c!2s72CF%2BPCC%2C%20Karangmulia%2C%20Tegalkamulyan%2C%20Kec.%20Cilacap%20Sel.%2C%20Kabupaten%20Cilacap%2C%20Jawa%20Tengah!5e0!3m2!1sen!2sid!4v1692286776950!5m2!1sen!2sid"
