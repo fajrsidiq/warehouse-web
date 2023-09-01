@@ -88,10 +88,10 @@
                 Anda. Kami menyediakan jasa pengiriman yang handal dan suhu terkendali. Selain jual beli, layanan
                 penyimpanan Coldstorage (CS) dan Air Blast Freezing (ABF) juga kami tawarkan. Keahlian kami menjamin
                 produk tetap berkualitas. Dedikasi kami untuk kesegaran dan kualitas berperan dalam menjaga kelezatan
-                produk laut. Bergabunglah dengan Laut Biru Perkasa dalam menjaga kekayaan lautan bersama</h4>
+                produk laut. Bergabunglah dengan Laut Biru Perkasa dalam menjaga kekayaan lautan bersama.</h4>
         </div>
         <div class="text-center py-3">
-            <a href="/ikan" class="btn btn-primary px-5">Selanjutnya<i class="fas fa-arrow-right"></i></a>
+            <a href="/ikan" class="btn btn-primary px-5">Selanjutnya <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
 </div>
@@ -186,10 +186,7 @@
                         <img src="/img/truk3.png" width="100%" alt="">
                     </div>
                 </div>
-                <h5 class="justified-text">Jasa Air Blast Freezing adalah solusi canggih yang kami tawarkan untuk
-                    memastikan tangkapan laut Anda tetap segar dengan sempurna. Proses Air Blast Freezing melibatkan
-                    penggunaan udara super dingin yang ditiupkan dengan tekanan tinggi pada produk, membekukan produk
-                    dengan cepat dan merata.</h5>
+                <h5 class="justified-text">Laut Biru Perkasa juga menyediakan layanan pengiriman ikan segar dengan berbagai opsi sesuai dengan kebutuhan Anda. Kami menyadiakan Refrigerator Truck / Truk Kulkas untuk pengiriman jarak jauh dan Mobil Pick Up untuk pengiriman jarak dekat. Fasilitas tambahan yang disediakan berupa packing sterofoam dan pemberian es batu untuk menjaga kesegaran dan kualitas produk laut. Kami berkomitmen untuk memberikan pengalaman jual beli yang memuaskan dengan mengantarkan ikan segar langsung dari laut ke pintu Anda.</h5>
                 <div class="text-center mt-3">
                     <a href="/kirim" class="btn btn-light px-5"> <i class="fas fa-arrow-right"></i></a>
                 </div>

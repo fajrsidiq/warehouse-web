@@ -63,91 +63,94 @@
 
         <div class="faq">
             <div class="question" onclick="toggleAnswer(this)">
-                <span class="icon anchor-icon">🔍</span> Q: Pertanyaan 1?
+                <span class="icon anchor-icon">🔍</span> Q: Apa saja jenis ikan yang tersedia didalam stok?
             </div>
             <div class="answer">
-                A: Jawaban 1.
+                A:  Stok kami meliputi beragam jenis ikan berkualitas, termasuk Tuna, Baby Tuna, Cumi-cumi, Lemadang, Cakalang, Albakora, Marlin, Sunglir, Layur, dan masih banyak lagi. Untuk melihat daftar lengkapnya, silakan kunjungi halaman "Jenis Ikan".
             </div>
         </div>
 
         <div class="faq">
             <div class="question" onclick="toggleAnswer(this)">
-                <span class="icon anchor-icon">🔍</span> Q: Pertanyaan 2?
+                <span class="icon anchor-icon">🔍</span> Q: Bagaimana cara kami untuk menghubungi Laut Biru Perkasa?
             </div>
             <div class="answer">
-                A: Jawaban 2.
+                A:  Anda dapat dengan mudah menghubungi kami melalui kontak berikut :
+                Wisnu (081394060849), 
+                Amel (087883657036), 
+                Nopal (081215625924)
             </div>
         </div>
 
         <div class="faq">
             <div class="question" onclick="toggleAnswer(this)">
-                <span class="icon anchor-icon">🔍</span> Q: Pertanyaan 3?
+                <span class="icon anchor-icon">🔍</span> Q: Apa metode pembayaran yang kami terima?
             </div>
             <div class="answer">
-                A: Jawaban 3.
+                A: Kami menerima pembayaran tunai secara langsung atau melalui transfer ke rekening BCA.
             </div>
         </div>
 
         <div class="faq">
             <div class="question" onclick="toggleAnswer(this)">
-                <span class="icon anchor-icon">🔍</span> Q: Pertanyaan 4?
+                <span class="icon anchor-icon">🔍</span> Q: Apa ukuran ikan yang tersedia?
             </div>
             <div class="answer">
-                A: Jawaban 4.
+                A: Ukuran ikan yang kami sediakan bervariasi, mulai dari yang kecil hingga besar, tergantung pada jenis ikan yang Anda pilih.
             </div>
         </div>
 
         <div class="faq">
             <div class="question" onclick="toggleAnswer(this)">
-                <span class="icon anchor-icon">🔍</span> Q: Pertanyaan 5?
+                <span class="icon anchor-icon">🔍</span> Q: Seberapa mudah akses ke lokasi kami?
             </div>
             <div class="answer">
-                A: Jawaban 5.
+                A: Lokasi kami sangat mudah untuk diakses dan juga menyediakan fasilitas parkir yang luas untuk kendaraan kecil maupun besar.
             </div>
         </div>
 
         <div class="faq">
             <div class="question" onclick="toggleAnswer(this)">
-                <span class="icon anchor-icon">🔍</span> Q: Pertanyaan 6?
+                <span class="icon anchor-icon">🔍</span> Q: Bagaimana kualitas ikan yang kami tawarkan?
             </div>
             <div class="answer">
-                A: Jawaban 6.
+                A: Kami menyediakan berbagai kualitas ikan, termasuk grade A, B, dan C, sehingga Anda dapat memilih sesuai dengan kebutuhan Anda.
             </div>
         </div>
 
         <div class="faq">
             <div class="question" onclick="toggleAnswer(this)">
-                <span class="icon anchor-icon">🔍</span> Q: Pertanyaan 7?
+                <span class="icon anchor-icon">🔍</span> Q: Berapa lama waktu pengiriman pesanan ikan?
             </div>
             <div class="answer">
-                A: Jawaban 7.
+                A: Kami sangat memperhatikan kecepatan pengiriman karena kami ingin memastikan ikan sampai di tangan Anda dengan segar dan prima.
             </div>
         </div>
 
         <div class="faq">
             <div class="question" onclick="toggleAnswer(this)">
-                <span class="icon anchor-icon">🔍</span> Q: Pertanyaan 8?
+                <span class="icon anchor-icon">🔍</span> Q: Bagaimana cara melakukan pemesanan ikan?
             </div>
             <div class="answer">
-                A: Jawaban 8.
+                A: Anda dapat dengan mudah melakukan pemesanan dengan menghubungi nomor yang tertera di atas atau bisa datang secara langsung ke Laut Biru Perkasa.
             </div>
         </div>
 
         <div class="faq">
             <div class="question" onclick="toggleAnswer(this)">
-                <span class="icon anchor-icon">🔍</span> Q: Pertanyaan 9?
+                <span class="icon anchor-icon">🔍</span> Q: Apa saja layanan yang kami sediakan?
             </div>
             <div class="answer">
-                A: Jawaban 9.
+                A: Kami menyediakan berbagai layanan, mulai dari jual beli ikan hingga pengiriman ke lokasi pemesanan, cold storage, dan  air blast freezing.
             </div>
         </div>
 
         <div class="faq">
             <div class="question" onclick="toggleAnswer(this)">
-                <span class="icon anchor-icon">🔍</span> Q: Pertanyaan 10?
+                <span class="icon anchor-icon">🔍</span> Q: Apakah ikan yang kami tawarkan memenuhi standar kelayakan?
             </div>
             <div class="answer">
-                A: Jawaban 10.
+                A: Tentu, kami telah memperoleh sertifikat resmi yang menjamin bahwa ikan kami memenuhi standar kelayakan hasil tangkapan laut yang berlaku. Keamanan dan kualitas ikan adalah prioritas utama kami.
             </div>
         </div>
 
