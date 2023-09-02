@@ -92,5 +92,7 @@ Route::get('/stockin/search', [StockController::class, 'searchIncoming'])->name(
 Route::get('/stockout/search', [StockController::class, 'searchOutgoing'])->name('stockout.search');
 Route::get('/pdf/incoming-log', [PDFController::class, 'generateIncomingLogPDF'])->name('pdf.generateIncomingLogPDF');
 Route::get('/pdf/outgoing-log', [PDFController::class, 'generateOutgoingLogPDF'])->name('pdf.generateOutgoingLogPDF');
+Route::post('/pdf/in_invoice', [PDFController::class, 'generateInInvoice'])->name('pdf.in_invoice');
+Route::post('/pdf/out_invoice', [PDFController::class, 'generateOutInvoice'])->name('pdf.out_invoice');
 
 
