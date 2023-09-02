@@ -111,18 +111,13 @@
 
 
 <div class="bg-primary fade-in">
-    <div class="container py-5">
+    <div class="container py-3">
         <div class="text-white">
             <div class="text-center">
                 <h2 class="">Kami Juga Menyediakan</h2>
-                <h4>COLD STORAGE (CS)</h4>
+                <h4 class="mb-4">COLD STORAGE (CS) & AIR BLAST FREEZING</h4>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <img src="/img/coldstorage2.jpg" width="100%" alt="">
-                    </div>
-                </div>
                 <div class="col-md-4">
                     <div class="text-center">
                         <img src="/img/coldstorage1.jpg" width="100%" alt="">
@@ -130,18 +125,31 @@
                 </div>
                 <div class="col-md-4">
                     <div class="text-center">
-                        <img src="/img/coldstorage3.jpg" width="100%" alt="">
+                        <img src="/img/abf3.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="/img/abf1.jpg" width="100%" alt="">
                     </div>
                 </div>
                 <h5 class="justified-text">Jasa Coldstorage adalah solusi esensial untuk menjaga kesegaran dan kualitas
                     produk yang memerlukan suhu terkendali. Laut Biru Perkasa menghadirkan layanan Coldstorage dengan
                     penuh dedikasi, memberikan lingkungan ideal untuk produk laut agar tetap segar dan berkualitas
                     optimal.</h5>
+                <h5 class="justified-text">Jasa Air Blast Freezing adalah solusi canggih yang kami tawarkan untuk
+                    memastikan tangkapan laut Anda tetap segar dengan sempurna. Proses Air Blast Freezing melibatkan
+                    penggunaan udara super dingin yang ditiupkan dengan tekanan tinggi pada produk, membekukan produk
+                    dengan cepat dan merata.</h5>
+            </div>
+            <div class="text-center mt-3 fade-in">
+                <a href="/coldstorage" class="btn btn-primary px-5"> <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
 </div>
 
+<!-- Air Blast Freezing
 <div class="bg-info fade-in">
     <div class="container py-5">
         <div class="text-white">
@@ -175,13 +183,14 @@
         </div>
     </div>
 </div>
+-->
 
 <div class="bg-light fade-in">
-    <div class="container py-5">
+    <div class="container py-3">
         <div class="text-dark">
             <div class="text-center">
                 <h2 class="">Jasa Pengiriman</h2>
-                <h4>Ikan Segar</h4>
+                <h4 class="mb-4">Ikan Segar</h4>
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -209,9 +218,9 @@
 </div>
 
 
-<div class="container my-4 fade-in">
+<div class="container py-3 fade-in">
     <div class="text-center">
-        <h4 class="">Jenis Ikan yang Kami Sediakan</h4>
+        <h4>Jenis Ikan yang Kami Sediakan</h4>
         <p>____________________________________________________________</p>
     </div>
     <div class="row">
