@@ -16,35 +16,47 @@ class StockController extends Controller
     }
 
 
-    public function incomingLog(Request $request)
+    public function incomingLog()
     {
-        $sort = $request->input('sort', 'latest'); // Default to 'latest'
-
-        $query = StockIn::select('*');
-
-        if ($sort === 'latest') {
-            $query->orderByDesc('created_at');
-        } else {
-            $query->orderBy('item_name')->orderByDesc('created_at');
-        }
-
-        $incomingLogs = $query->get();
-        return view('stock.incoming_log', compact('incomingLogs', 'sort'));
+        $incomingLogs = StockIn::orderByDesc('created_at')->get();
+        return view('stock.incoming_log', compact('incomingLogs'));
     }
 
-    public function outgoingLog(Request $request)
+    public function searchIncoming(Request $request)
     {
-        $sort = $request->input('sort', 'latest'); // Default to 'latest'
+        // Validate the input
+        $request->validate([
+            'date' => 'required|date_format:Y-m-d',
+        ]);
 
-        $query = StockOut::select('*');
+        // Get the date from the request
+        $searchDate = $request->input('date');
 
-        if ($sort === 'latest') {
-            $query->orderByDesc('created_at');
-        } else {
-            $query->orderBy('item_name')->orderByDesc('created_at');
-        }
+        // Perform the search on incoming logs
+        $incomingLogs = StockIn::whereDate('created_at', $searchDate)->orderByDesc('created_at')->get();
 
-        $outgoingLogs = $query->get();
-        return view('stock.outgoing_log', compact('outgoingLogs', 'sort'));
+        return view('stock.incoming_log', compact('incomingLogs', 'searchDate'));
+    }
+
+    public function outgoingLog()
+    {
+        $outgoingLogs = StockOut::orderByDesc('created_at')->get();
+        return view('stock.outgoing_log', compact('outgoingLogs'));
+    }
+
+    public function searchOutgoing(Request $request)
+    {
+        // Validate the input
+        $request->validate([
+            'date' => 'required|date_format:Y-m-d',
+        ]);
+
+        // Get the date from the request
+        $searchDate = $request->input('date');
+
+        // Perform the search on outgoing logs
+        $outgoingLogs = StockOut::whereDate('created_at', $searchDate)->orderByDesc('created_at')->get();
+
+        return view('stock.outgoing_log', compact('outgoingLogs', 'searchDate'));
     }
 }

@@ -5,6 +5,7 @@ use App\Http\Controllers\NewItemController;
 use App\Http\Controllers\StockController;
 use App\Http\Controllers\StockInController;
 use App\Http\Controllers\StockOutController;
+use App\Http\Controllers\PDFController;
 
 
 /*
@@ -87,4 +88,9 @@ Route::get('/stockin', [StockInController::class, 'create'])->name('stock.in');
 Route::post('/stockin', [StockInController::class, 'store'])->name('stockin.store');
 Route::get('/stockout', [StockOutController::class, 'create'])->name('stock.out');
 Route::post('/stockout', [StockOutController::class, 'store'])->name('stockout.store');
+Route::get('/stockin/search', [StockController::class, 'searchIncoming'])->name('stockin.search');
+Route::get('/stockout/search', [StockController::class, 'searchOutgoing'])->name('stockout.search');
+Route::get('/pdf/incoming-log', [PDFController::class, 'generateIncomingLogPDF'])->name('pdf.generateIncomingLogPDF');
+Route::get('/pdf/outgoing-log', [PDFController::class, 'generateOutgoingLogPDF'])->name('pdf.generateOutgoingLogPDF');
+
 

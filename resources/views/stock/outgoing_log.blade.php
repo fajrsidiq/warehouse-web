@@ -1,31 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-    <style>
-        .text-link {
-            color: blue;
-            text-decoration: underline;
-            cursor: pointer;
-        }
-
-        .text-link.active {
-            font-weight: bold;
-        }
-
-        .text-link.disabled {
-            color: black;
-            cursor: default;
-            text-decoration: none;
-        }
-    </style>
     <h2>Outgoing Stock Logs</h2>
 
-    <div class="mb-3">
-        <a href="{{ route('logs.outgoing') }}?sort=latest"
-            class="text-link @if ($sort === 'latest') active disabled @endif">Sort by Latest</a> |
-        <a href="{{ route('logs.outgoing') }}?sort=item"
-            class="text-link @if ($sort === 'item') active disabled @endif">Sort by Item Name</a>
+    <form action="{{ route('stockout.search') }}" method="GET">
+        <label for="date">Search by Date (yyyy-mm-dd):</label>
+        <input type="text" id="date" name="date" placeholder="yyyy-mm-dd" required>
+        <button type="submit">Search</button>
+    </form>
+    <div>
+        <button id="pdf-button" class="btn btn-primary">Generate PDF</button>
     </div>
+
     <table class="table">
         <thead>
             <tr>
@@ -50,4 +36,57 @@
             @endforeach
         </tbody>
     </table>
+    <script>
+        // Add a click event listener to the PDF generation button
+        document.getElementById('pdf-button').addEventListener('click', function () {
+            // Get the current URL
+            const currentUrl = window.location.href;
+    
+            // Extract the date parameter from the URL if it exists
+            const url = new URL(currentUrl);
+            const dateParam = url.searchParams.get('date');
+    
+            if (dateParam) {
+                // Encode the date to ensure proper URL formatting
+                const encodedDate = encodeURIComponent(dateParam);
+    
+                // Send an Ajax request to the server to generate the PDF with the selected date
+                fetch(`{{ route('pdf.generateOutgoingLogPDF') }}?date=${encodedDate}`, {
+                    method: 'GET',
+                })
+                .then(response => response.blob())
+                .then(blob => {
+                    // Create a URL for the generated PDF blob
+                    const pdfUrl = URL.createObjectURL(blob);
+    
+                    // Open the PDF in a new browser tab
+                    window.open(pdfUrl, '_blank');
+    
+                    // Clean up the URL object to release resources
+                    URL.revokeObjectURL(pdfUrl);
+                })
+                .catch(error => {
+                    console.error('Error generating PDF:', error);
+                });
+            } else {
+                fetch('{{ route('pdf.generateOutgoingLogPDF') }}', {
+                method: 'GET',
+            })
+            .then(response => response.blob())
+            .then(blob => {
+                // Create a URL for the generated PDF blob
+                const pdfUrl = URL.createObjectURL(blob);
+
+                // Open the PDF in a new browser tab
+                window.open(pdfUrl, '_blank');
+
+                // Clean up the URL object to release resources
+                URL.revokeObjectURL(pdfUrl);
+            })
+            .catch(error => {
+                console.error('Error generating PDF:', error);
+            });
+            }
+        });
+    </script>
 @endsection
