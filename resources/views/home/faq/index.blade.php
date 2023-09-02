@@ -45,6 +45,20 @@
         .anchor-icon {
             font-size: 24px;
         }
+
+        /* Animasi fadeIn */
+    .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
     <script>
         function toggleAnswer(element) {
@@ -58,7 +72,7 @@
     </script>
 </head>
 <body>
-    <div class="faq-container">
+    <div class="faq-container fade-in">
         <h1 style="text-align: center;"><span class="anchor-icon">⚓</span> Frequently Asked Questions (FAQ) <span class="anchor-icon">⚓</span></h1>
 
         <div class="faq">

@@ -17,19 +17,33 @@
         text-align: justify;
         font-size: 18px;
     }
+
+    /* Animasi fadeIn */
+    .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 </style>
 
 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <div class="wrapper-img-banner">
+            <div class="wrapper-img-banner fade-in">
                 <img src="/img/kolase.png" class="img-banner" alt="">
             </div>
             <div class="container">
                 <div class="carousel-caption">
                     <div class="text-light">
-                        <h1>About Us</h1>
-                        <h3>Kenali Lebih Lanjut Tentang Laut Biru Perkasa</h3>
+                        <h1 class="fade-in">About Us</h1>
+                        <h3 class="fade-in">Kenali Lebih Lanjut Tentang Laut Biru Perkasa</h3>
                     </div>
                 </div>
             </div>
@@ -37,7 +51,7 @@
     </div>
 </div>
 
-<div class="container py-3">
+<div class="container py-3 fade-in">
     <div class="row">
         <div class="col-md-4">
             <img src="/img/lautbiruperkasa1.jpg" width="100%" alt="">
@@ -89,7 +103,7 @@
 </div>
 -->
 
-<div class="bg-primary">
+<div class="bg-primary fade-in">
     <div class="container py-5">
         <div class="text-white">
             <div class="text-center">
@@ -121,7 +135,7 @@
     </div>
 </div>
 
-<div class="bg-info">
+<div class="bg-info fade-in">
     <div class="container py-5">
         <div class="text-white">
             <div class="text-center">
@@ -152,7 +166,7 @@
     </div>
 </div>
 
-<div class="bg-light">
+<div class="bg-light fade-in">
     <div class="container py-5">
         <div class="text-dark">
             <div class="text-center">
@@ -184,7 +198,7 @@
     </div>
 </div>
 
-<div class="container py-5">
+<div class="container py-5 fade-in">
     <div class="text-dark">
         <div class="text-center">
             <h2 class="">Struktur Organisasi</h2>
@@ -230,7 +244,7 @@
 </div>
 -->
 
-<div class="container mt-5">
+<div class="container mt-5 fade-in">
     <div class="text-center">
         <h2>Hubungi Kami</h2>
         <h4 class="mb-4">Anda Dapat Bertanya Langsung Kepada Kami</h4>

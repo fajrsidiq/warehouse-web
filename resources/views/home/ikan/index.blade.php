@@ -2,9 +2,23 @@
     .justified-text {
         text-align: justify;
     }
+
+    /* Animasi fadeIn */
+    .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 </style>
 
-<div class="container">
+<div class="container fade-in">
     <div class="text-center mt-5">
         <h4 class="">Jenis Ikan</h4>
         <p>Jenis ikan apa saja yang kami sediakan ?</p>

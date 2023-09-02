@@ -28,7 +28,7 @@
     justify-content: center;
 }
 
-  .email-text {
+.email-text {
     background-color: red;
     color: white;
     font-size: 18px;
@@ -41,4 +41,56 @@
     height: 50px;
     width: 300px;
     margin: 0 auto;
-  }
+}
+
+/* CSS Kontak */
+.contact-info {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title {
+    color: #333;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-item i {
+    margin-right: 15px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Menggunakan animasi pada elemen teks */
+.text-center.my-5 h2,
+.text-center.my-5 h4,
+.contact-item i,
+.contact-item h3,
+.map-container iframe {
+    opacity: 0; /* Mulai dengan opacity 0 */
+    animation: fadeIn 1s ease forwards; /* Terapkan animasi fade-in selama 1 detik */
+    animation-delay: 0.2s; /* Delay animasi selama 0.2 detik */
+}

@@ -8,6 +8,19 @@
         width: 100%;
 
     }
+    /* Animasi fadeIn */
+    .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 </style>
 
 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -18,7 +31,7 @@
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
 
-    <div class="carousel-inner">
+    <div class="carousel-inner fade-in">
         <div class="carousel-item active">
             <div class="wrapper-img-banner">
                 <img src="/img/banner1.jpg" class="img-banner" alt="">
@@ -71,7 +84,7 @@
     }
 </style>
 
-<div class="container mt-5">
+<div class="container mt-5 fade-in">
     <div class="text-center">
         <h2 class="">About Us</h2>
         <p>____________________________</p>
@@ -79,7 +92,7 @@
 
     <div class="row">
         <div class="col-md-6">
-            <img src="/img/lautbiruperkasa2.jpg" width="100%" alt="">
+            <img src="/img/lautbiruperkasa2.jpg" width="100%" alt="" class="fade-in">
         </div>
         <div class="col-md-6">
             <h4 class="justified-text"> Selamat datang di Laut Biru Perkasa, kami berkomitmen menjaga kesegaran harta
@@ -90,14 +103,14 @@
                 produk tetap berkualitas. Dedikasi kami untuk kesegaran dan kualitas berperan dalam menjaga kelezatan
                 produk laut. Bergabunglah dengan Laut Biru Perkasa dalam menjaga kekayaan lautan bersama.</h4>
         </div>
-        <div class="text-center py-3">
-            <a href="/ikan" class="btn btn-primary px-5">Selanjutnya <i class="fas fa-arrow-right"></i></a>
+        <div class="text-center py-3 fade-in">
+            <a href="/about" class="btn btn-primary px-5">Selanjutnya <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
 </div>
 
 
-<div class="bg-primary">
+<div class="bg-primary fade-in">
     <div class="container py-5">
         <div class="text-white">
             <div class="text-center">
@@ -129,7 +142,7 @@
     </div>
 </div>
 
-<div class="bg-info">
+<div class="bg-info fade-in">
     <div class="container py-5">
         <div class="text-white">
             <div class="text-center">
@@ -155,7 +168,7 @@
                     memastikan tangkapan laut Anda tetap segar dengan sempurna. Proses Air Blast Freezing melibatkan
                     penggunaan udara super dingin yang ditiupkan dengan tekanan tinggi pada produk, membekukan produk
                     dengan cepat dan merata.</h5>
-                <div class="text-center mt-3">
+                <div class="text-center mt-3 fade-in">
                     <a href="/coldstorage" class="btn btn-info px-5"> <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
@@ -163,7 +176,7 @@
     </div>
 </div>
 
-<div class="bg-light">
+<div class="bg-light fade-in">
     <div class="container py-5">
         <div class="text-dark">
             <div class="text-center">
@@ -187,7 +200,7 @@
                     </div>
                 </div>
                 <h5 class="justified-text">Laut Biru Perkasa juga menyediakan layanan pengiriman ikan segar dengan berbagai opsi sesuai dengan kebutuhan Anda. Kami menyadiakan Refrigerator Truck / Truk Kulkas untuk pengiriman jarak jauh dan Mobil Pick Up untuk pengiriman jarak dekat. Fasilitas tambahan yang disediakan berupa packing sterofoam dan pemberian es batu untuk menjaga kesegaran dan kualitas produk laut. Kami berkomitmen untuk memberikan pengalaman jual beli yang memuaskan dengan mengantarkan ikan segar langsung dari laut ke pintu Anda.</h5>
-                <div class="text-center mt-3">
+                <div class="text-center mt-3 fade-in">
                     <a href="/kirim" class="btn btn-light px-5"> <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
@@ -196,7 +209,7 @@
 </div>
 
 
-<div class="container my-4">
+<div class="container my-4 fade-in">
     <div class="text-center">
         <h4 class="">Jenis Ikan yang Kami Sediakan</h4>
         <p>____________________________________________________________</p>
@@ -236,13 +249,13 @@
             </div>
         </div>
     </div>
-    <div class="text-center mt-3">
+    <div class="text-center mt-3 fade-in">
         <a href="/ikan" class="btn btn-primary px-5">Selengkapnya <i class="fas fa-arrow-right"></i></a>
     </div>
 </div>
 
 
-<div class="bg-primary my-5">
+<div class="bg-primary my-5 fade-in">
     <div class="container py-5">
         <div class="text-white">
             <h4 class="mb-3">Pelajari Tentang kami</h4>
@@ -252,21 +265,19 @@
                 Semuanya tersedia di sini untuk memberikan wawasan menyeluruh tentang apa yang membuat Laut Biru Perkasa
                 menjadi pilihan yang tepat bagi Anda. </p>
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 fade-in">
             <a href="/about" class="btn btn-primary px-5"> <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
 </div>
 
-<div class="container my-2 mb-5">
+<div class="container my-2 mb-5 fade-in">
     <div class="text-center">
         <h3>Hubungi Kami</h3>
         <p>Anda Dapat Bertanya Langsung Kepada Kami</p>
-        <a href="https://wa.me/+6281394060849" class="btn btn-success px-5" target="blank"><i
+        <a href="https://wa.me/+6281394060849" class="btn btn-success px-5 fade-in" target="blank"><i
                 class="fas fa-phone"></i> Hubungi Kami di WhatsApp</a>
         <h5>Atau</h5>
-        <!--<a href="mailto:udlautbiruperkasa@gmail.com" class="btn btn-danger px-5" target="blank"><i
-                class="fas fa-envelope"></i> Hubungi Kami di Gmail</a>-->
-        <div class="email-text">udlautbiruperkasa@gmail.com</div>
+        <div class="email-text fade-in">udlautbiruperkasa@gmail.com</div>
     </div>
 </div>
