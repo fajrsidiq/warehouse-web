@@ -27,8 +27,6 @@ class StockOutController extends Controller
             ])->validate();
     
             StockOut::create($validatedData);
-    
-            // Update stock amount in Stock table
             $stock = Stock::where('item_name', $entry['item_name'])->first();
             $stock->stock_amount -= $entry['stock_out_amount'];
             $stock->weight -= $entry['weight'];

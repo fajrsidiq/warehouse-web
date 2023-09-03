@@ -17,8 +17,6 @@ class StockInController extends Controller
     public function store(Request $request)
     {
         $entries = $request->input('entries');
-
-        // Validate input
         foreach ($entries as $entry) {
             $validatedData = validator($entry, [
                 'item_name' => 'required',
@@ -27,11 +25,7 @@ class StockInController extends Controller
                 'price' => 'required|numeric',
                 'notes' => 'nullable|string',
             ])->validate();
-
-            // Store stock in data
             StockIn::create($validatedData);
-
-            // Update stock amount and weight in Stock table
             $stock = Stock::where('item_name', $entry['item_name'])->first();
             $stock->stock_amount += $entry['stock_in_amount'];
             $stock->weight += $entry['weight'];

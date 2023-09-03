@@ -13,14 +13,11 @@ class NewItemController extends Controller
 
     public function store(Request $request)
     {
-        // Validate input
         $validatedData = $request->validate([
             'item_name' => 'required|unique:stocks',
             'stock_amount' => 'nullable|numeric',
             'weight' => 'nullable|numeric'
         ]);
-
-        // Create new stock item
         Stock::create($validatedData);
 
         return redirect()->route('newitem.create')->with('success', 'Item created successfully.');

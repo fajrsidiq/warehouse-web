@@ -11,7 +11,8 @@
     <a href="{{ route('stock.out') }}" class="button-link">
         <button>Stok Keluar</button>
     </a>
-
+        <button type="button" id="pdf-button">print pdf</button>
+        
     <table class="table">
         <thead>
             <tr>
@@ -30,4 +31,21 @@
             @endforeach
         </tbody>
     </table>
+    <script>
+        document.getElementById('pdf-button').addEventListener('click', function() {
+            fetch('{{ route('pdf.current_stock') }}', {
+                    method: 'GET',
+                })
+                .then(response => response.blob())
+                .then(blob => {
+                    const pdfUrl = URL.createObjectURL(blob);
+                    window.open(pdfUrl, '_blank');
+                    URL.revokeObjectURL(pdfUrl);
+                })
+                .catch(error => {
+                    console.error('Error generating PDF:', error);
+                });
+
+        })
+    </script>
 @endsection

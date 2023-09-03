@@ -69,10 +69,7 @@
             entryIndex++;
         });
         document.querySelector('#generate-out-invoice').addEventListener('click', function() {
-            // Get the current date
             const currentDate = new Date().toLocaleDateString();
-
-            // Extract data from each entry's item name, weight, and price fields
             const entryData = [];
             document.querySelectorAll('.entry').forEach((entry, index) => {
                 const itemName = entry.querySelector('select[name^="entries["]').value;
@@ -80,14 +77,12 @@
                 const price = entry.querySelector('input[name^="entries["][name$="[price]"]').value;
 
                 entryData.push({
-                    entryIndex: index, // Include the entry index
+                    entryIndex: index,
                     itemName,
                     weight,
                     price,
                 });
             });
-
-            // Send an Ajax request to the server to generate the PDF with the extracted data and current date
             fetch(`{{ route('pdf.out_invoice') }}`, {
                     method: 'POST',
                     headers: {
@@ -101,13 +96,8 @@
                 })
                 .then(response => response.blob())
                 .then(blob => {
-                    // Create a URL for the generated PDF blob
                     const pdfUrl = URL.createObjectURL(blob);
-
-                    // Open the PDF in a new browser tab
                     window.open(pdfUrl, '_blank');
-
-                    // Clean up the URL object to release resources
                     URL.revokeObjectURL(pdfUrl);
                 })
                 .catch(error => {

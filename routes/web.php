@@ -90,6 +90,7 @@ Route::get('/stokkeluar', [StockOutController::class, 'create'])->name('stock.ou
 Route::post('/stokkeluar', [StockOutController::class, 'store'])->name('stockout.store');
 Route::get('/stokmasuk/search', [StockController::class, 'searchIncoming'])->name('stockin.search');
 Route::get('/stokkeluar/search', [StockController::class, 'searchOutgoing'])->name('stockout.search');
+Route::get('/pdf/current_stock', [PDFController::class, 'generateCurrentStock'])->name('pdf.current_stock');
 Route::get('/pdf/incoming-log', [PDFController::class, 'generateIncomingLogPDF'])->name('pdf.generateIncomingLogPDF');
 Route::get('/pdf/outgoing-log', [PDFController::class, 'generateOutgoingLogPDF'])->name('pdf.generateOutgoingLogPDF');
 Route::post('/pdf/in_invoice', [PDFController::class, 'generateInInvoice'])->name('pdf.in_invoice');
