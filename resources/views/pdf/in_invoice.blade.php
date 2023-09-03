@@ -18,21 +18,21 @@
     <hr>
 
     <div style="text-align: center;">
-        <p><strong>Buy / Sell</strong></p>
+        <p><strong>Beli / Jual</strong></p>
     </div>
 
     <table style="width: 100%; border-collapse: collapse;">
         <thead>
             <tr>
-                <th style="border: 1px solid #000; padding: 8px;">Weight</th>
-                <th style="border: 1px solid #000; padding: 8px;">Item Name</th>
-                <th style="border: 1px solid #000; padding: 8px;">Price</th>
+                <th style="border: 1px solid #000; padding: 8px;">Berat</th>
+                <th style="border: 1px solid #000; padding: 8px;">Nama Ikan</th>
+                <th style="border: 1px solid #000; padding: 8px;">Harga</th>
             </tr>
         </thead>
         <tbody>
             @foreach ($entryData as $entry)
                 <tr>
-                    <td style="border: 1px solid #000; padding: 8px;">{{ $entry['weight'] }}</td>
+                    <td style="border: 1px solid #000; padding: 8px;">{{ $entry['weight'] }}KG</td>
                     <td style="border: 1px solid #000; padding: 8px;">{{ $entry['itemName'] }}</td>
                     <td style="border: 1px solid #000; padding: 8px;">{{ $entry['price'] }}</td>
                 </tr>

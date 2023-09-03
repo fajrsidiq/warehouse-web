@@ -79,17 +79,17 @@ Route::get('/faq', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/newitem', [NewItemController::class, 'create'])->name('newitem.create');
-Route::post('/newitem', [NewItemController::class, 'store'])->name('newitem.store');
-Route::get('/stock', [StockController::class, 'currentStock'])->name('stock.current');
-Route::get('/stockh1', [StockController::class, 'incomingLog'])->name('logs.incoming');
-Route::get('/stockh2', [StockController::class, 'outgoingLog'])->name('logs.outgoing');
-Route::get('/stockin', [StockInController::class, 'create'])->name('stock.in');
-Route::post('/stockin', [StockInController::class, 'store'])->name('stockin.store');
-Route::get('/stockout', [StockOutController::class, 'create'])->name('stock.out');
-Route::post('/stockout', [StockOutController::class, 'store'])->name('stockout.store');
-Route::get('/stockin/search', [StockController::class, 'searchIncoming'])->name('stockin.search');
-Route::get('/stockout/search', [StockController::class, 'searchOutgoing'])->name('stockout.search');
+Route::get('/baru', [NewItemController::class, 'create'])->name('newitem.create');
+Route::post('/baru', [NewItemController::class, 'store'])->name('newitem.store');
+Route::get('/datastok', [StockController::class, 'currentStock'])->name('stock.current');
+Route::get('/datamasuk', [StockController::class, 'incomingLog'])->name('logs.incoming');
+Route::get('/datakeluar', [StockController::class, 'outgoingLog'])->name('logs.outgoing');
+Route::get('/stokmasuk', [StockInController::class, 'create'])->name('stock.in');
+Route::post('/stokmasuk', [StockInController::class, 'store'])->name('stockin.store');
+Route::get('/stokkeluar', [StockOutController::class, 'create'])->name('stock.out');
+Route::post('/stokkeluar', [StockOutController::class, 'store'])->name('stockout.store');
+Route::get('/stokmasuk/search', [StockController::class, 'searchIncoming'])->name('stockin.search');
+Route::get('/stokkeluar/search', [StockController::class, 'searchOutgoing'])->name('stockout.search');
 Route::get('/pdf/incoming-log', [PDFController::class, 'generateIncomingLogPDF'])->name('pdf.generateIncomingLogPDF');
 Route::get('/pdf/outgoing-log', [PDFController::class, 'generateOutgoingLogPDF'])->name('pdf.generateOutgoingLogPDF');
 Route::post('/pdf/in_invoice', [PDFController::class, 'generateInInvoice'])->name('pdf.in_invoice');

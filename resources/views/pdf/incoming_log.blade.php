@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Incoming Stock Log</title>
+    <title>Data Stok Masuk</title>
     <!-- Add your styles here if needed -->
     <style>
         .pdf-table {
@@ -20,16 +20,16 @@
     
 </head>
 <body>
-    <h1>Incoming Stock Log</h1>
+    <h1>Data Stok Masuk</h1>
     <table id="log-table" class="pdf-table">
         <thead>
             <tr>
-                <th>Timestamp</th>
-                <th>Item Name</th>
-                <th>Stock In Amount</th>
-                <th>Weight</th>
-                <th>Price</th>
-                <th>Notes</th>
+                <th>Tanggal</th>
+                <th>Nama Ikan</th>
+                <th>Jumlah Ikan</th>
+                <th>Berat</th>
+                <th>Harga</th>
+                <th>Catatan</th>
             </tr>
         </thead>
         <tbody>

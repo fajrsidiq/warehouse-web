@@ -1,27 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
-    <h2>Incoming Stock Logs</h2>
+    <h2>Data Stok Masuk</h2>
 
     <form action="{{ route('stockin.search') }}" method="GET">
-        <label for="date">Search by Date (yyyy-mm-dd):</label>
+        <label for="date">Cari Tanggal (yyyy-mm-dd):</label>
         <input type="text" id="date" name="date" placeholder="yyyy-mm-dd" required>
-        <button type="submit">Search</button>
+        <button type="submit">Cari</button>
     </form>
 
     <div>
-        <button id="pdf-button" class="btn btn-primary">Generate PDF</button>
+        <button id="pdf-button" class="btn btn-primary">Print PDF</button>
     </div>
 
     <table id="log-table" class="table">
         <thead>
             <tr>
-                <th>Timestamp</th>
-                <th>Item Name</th>
-                <th>Amount</th>
-                <th>Weight</th>
-                <th>Price</th>
-                <th>Notes</th>
+                <th>Tanggal</th>
+                <th>Nama Ikan</th>
+                <th>Jumlah Ikan</th>
+                <th>Berat</th>
+                <th>Harga</th>
+                <th>Catatan</th>
             </tr>
         </thead>
         <tbody>
