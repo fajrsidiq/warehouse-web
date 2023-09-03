@@ -108,7 +108,7 @@
         <div class="text-white">
             <div class="text-center">
                 <h2 class="">Kami Juga Menyediakan</h2>
-                <h4 class="mb-4">COLD STORAGE (CS) & AIR BLAST FREEZING</h4>
+                <h4 class="mb-4">COLD STORAGE (CS) & AIR BLAST FREEZING (ABF)</h4>
             </div>
             <div class="row">
                 <div class="col-md-4">
