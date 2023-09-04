@@ -24,12 +24,18 @@
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
         }
+        .nav-link{
+            font-size: 20px;
+        }
+        .table {
+        font-size: 20px;
+    }
     </style>
 </head>
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="/img/logo.png" style="width: 125px; height: auto;">
