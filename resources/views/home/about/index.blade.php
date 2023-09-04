@@ -185,17 +185,17 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="text-center">
+                        <img src="/img/mobil.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
                         <img src="/img/truk1.png" width="100%" alt="">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="text-center">
-                        <img src="/img/mobil.png" width="100%" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <img src="/img/truk3.png" width="100%" alt="">
+                        <img src="/img/truk2.jpg" width="100%" alt="">
                     </div>
                 </div>
                 <h5 class="justified-text">Laut Biru Perkasa juga menyediakan layanan pengiriman ikan segar dengan berbagai opsi sesuai dengan kebutuhan Anda. Kami menyadiakan Refrigerator Truck / Truk Kulkas untuk pengiriman jarak jauh dan Mobil Pick Up untuk pengiriman jarak dekat. Fasilitas tambahan yang disediakan berupa packing sterofoam dan pemberian es batu untuk menjaga kesegaran dan kualitas produk laut. Kami berkomitmen untuk memberikan pengalaman jual beli yang memuaskan dengan mengantarkan ikan segar langsung dari laut ke pintu Anda.</h5>

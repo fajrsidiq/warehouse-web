@@ -33,10 +33,10 @@
         }
 
         .service-box {
-            border: 1px solid #ccc;
+            border: 1px solid #53a5c7;
             padding: 20px;
             margin-bottom: 20px;
-            background-color: #f7f7f7;
+            background-color: #53a5c7;
         }
     </style>
 </head>

@@ -34,18 +34,16 @@
     <div class="carousel-inner fade-in">
         <div class="carousel-item active">
             <div class="wrapper-img-banner">
-                <img src="/img/banner1.jpg" class="img-banner" alt="">
+                <img src="/img/banner8.png" class="img-banner" alt="">
             </div>
             <div class="container">
                 <div class="carousel-caption text-start">
-                    <h1>Laut Biru Perkasa</h1>
-                    <h3>Cilacap</h3>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
             <div class="wrapper-img-banner">
-                <img src="/img/banner2.jpg" class="img-banner" alt="">
+                <img src="/img/banner1.jpg" class="img-banner" alt="">
             </div>
             <div class="container">
                 <div class="carousel-caption">
@@ -56,7 +54,7 @@
         </div>
         <div class="carousel-item">
             <div class="wrapper-img-banner">
-                <img src="/img/banner3.jpg" class="img-banner" alt="">
+                <img src="/img/banner2.jpg" class="img-banner" alt="">
             </div>
             <div class="container">
                 <div class="carousel-caption text-end">
@@ -195,17 +193,17 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="text-center">
+                        <img src="/img/mobil.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
                         <img src="/img/truk1.png" width="100%" alt="">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="text-center">
-                        <img src="/img/mobil.png" width="100%" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <img src="/img/truk3.png" width="100%" alt="">
+                        <img src="/img/truk2.jpg" width="100%" alt="">
                     </div>
                 </div>
                 <h5 class="justified-text">Laut Biru Perkasa juga menyediakan layanan pengiriman ikan segar dengan berbagai opsi sesuai dengan kebutuhan Anda. Kami menyadiakan Refrigerator Truck / Truk Kulkas untuk pengiriman jarak jauh dan Mobil Pick Up untuk pengiriman jarak dekat. Fasilitas tambahan yang disediakan berupa packing sterofoam dan pemberian es batu untuk menjaga kesegaran dan kualitas produk laut. Kami berkomitmen untuk memberikan pengalaman jual beli yang memuaskan dengan mengantarkan ikan segar langsung dari laut ke pintu Anda.</h5>
