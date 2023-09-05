@@ -15,6 +15,11 @@ class StockController extends Controller
         return view('stock.current', compact('stocks'));
     }
 
+    public function valuation()
+    {
+        $stocks = Stock::orderBy('item_name')->get();
+        return view('stock.valuation', ['stocks' => $stocks]);
+    }
 
     public function incomingLog()
     {

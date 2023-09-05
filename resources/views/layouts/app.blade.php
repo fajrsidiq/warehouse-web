@@ -58,6 +58,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('logs.outgoing') }}">{{ __('Data Keluar') }}</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('stock.valuation') }}">{{ __('Valuasi Ikan') }}</a>
+                        </li>
                     </ul>
 
 

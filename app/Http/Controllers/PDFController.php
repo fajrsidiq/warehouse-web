@@ -63,10 +63,10 @@ class PDFController extends Controller
 
         foreach ($entryData as $entry) {
             $total += $entry['weight'] * $entry['price'];
-            $entry['price'] = 'rp' . number_format($entry['price'], 2, ',', '.');
+            $entry['price'] = 'Rp ' . number_format($entry['price'], 2, ',', '.');
         }
 
-        $total = 'rp' . number_format($total, 2, ',', '.');
+        $total = 'Rp ' . number_format($total, 2, ',', '.');
 
         $pdf = PDF::loadView('pdf.in_invoice', [
             'date' => $date,
@@ -87,10 +87,10 @@ class PDFController extends Controller
 
         foreach ($entryData as $entry) {
             $total += $entry['weight'] * $entry['price'];
-            $entry['price'] = 'rp' . number_format($entry['price'], 2, ',', '.');
+            $entry['price'] = 'Rp ' . number_format($entry['price'], 2, ',', '.');
         }
 
-        $total = 'rp' . number_format($total, 2, ',', '.');
+        $total = 'Rp ' . number_format($total, 2, ',', '.');
 
         $pdf = PDF::loadView('pdf.out_invoice', [
             'date' => $date,
