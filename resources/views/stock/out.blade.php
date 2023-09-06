@@ -11,24 +11,30 @@
         @csrf
         <div id="entry-container">
             <div class="entry">
-                <label for="item_name">Nama Ikan:</label>
-                <select name="entries[0][item_name]" required>
-                    @foreach ($items as $item)
-                        <option value="{{ $item->item_name }}">{{ $item->item_name }}</option>
-                    @endforeach
-                </select>
-
-                <label for="stock_out_amount">Jumlah Ikan:</label>
-                <input type="number" name="entries[0][stock_out_amount]" min="1" required>
-
-                <label for="weight">Berat:</label>
-                <input type="number" name="entries[0][weight]" step="0.01" min="0" required>
-
-                <label for="price">Harga:</label>
-                <input type="number" name="entries[0][price]" step="0.01" min="0" required>
-
-                <label for="notes">Catatan:</label>
-                <textarea name="entries[0][notes]"></textarea>
+                <div>
+                    <label for="item_name">Nama Ikan:</label>
+                    <select name="entries[0][item_name]" required>
+                        @foreach ($items as $item)
+                            <option value="{{ $item->item_name }}">{{ $item->item_name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                <div>
+                    <label for="stock_out_amount">Jumlah Ikan:</label>
+                    <input type="number" name="entries[0][stock_out_amount]" min="1" required>
+                </div>
+                <div>
+                    <label for="weight">Berat:</label>
+                    <input type="number" name="entries[0][weight]" step="0.01" min="0" required>
+                </div>
+                <div>
+                    <label for="price">Harga:</label>
+                    <input type="number" name="entries[0][price]" step="0.01" min="0" required>
+                </div>
+                <div>
+                    <label for="notes">Catatan:</label>
+                    <textarea name="entries[0][notes]"></textarea>
+                </div>
             </div>
         </div>
         <button type="button" id="add-entry">+</button>
@@ -45,24 +51,30 @@
             const newEntry = document.createElement('div');
             newEntry.classList.add('entry');
             newEntry.innerHTML = `
-                <label for="item_name">Item Name:</label>
+            <div>
+                    <label for="item_name">Nama ikan:</label>
                 <select name="entries[${entryIndex}][item_name]" required>
                     @foreach ($items as $item)
                         <option value="{{ $item->item_name }}">{{ $item->item_name }}</option>
                     @endforeach
                 </select>
-
-                <label for="stock_out_amount">Stock Out Amount:</label>
-                <input type="number" name="entries[${entryIndex}][stock_out_amount]" min="1" required>
-
-                <label for="weight">Weight:</label>
-                <input type="number" name="entries[${entryIndex}][weight]" step="0.01" min="0" required>
-
-                <label for="price">Price:</label>
-                <input type="number" name="entries[${entryIndex}][price]" step="0.01" min="0" required>
-
-                <label for="notes">Notes:</label>
-                <textarea name="entries[${entryIndex}][notes]"></textarea>
+                </div>
+                <div>
+                    <label for="stock_out_amount">Jumlah Ikan:</label>
+                    <input type="number" name="entries[${entryIndex}][stock_out_amount]" min="1" required>
+                </div>
+                <div>
+                    <label for="weight">Berat:</label>
+                    <input type="number" name="entries[${entryIndex}][weight]" step="0.01" min="0" required>
+                </div>
+                <div>
+                    <label for="price">Harga:</label>
+                    <input type="number" name="entries[${entryIndex}][price]" step="0.01" min="0" required>
+                </div>
+                <div>
+                    <label for="notes">Catatan:</label>
+                    <textarea name="entries[${entryIndex}][notes]"></textarea>
+                </div>
             `;
 
             entryContainer.appendChild(newEntry);
