@@ -38,8 +38,9 @@
             </div>
         </div>
         <button type="button" id="add-entry">+</button>
-        <button type="submit">Simpan</button>
         <button type="button" id="generate-in-invoice">Print Invoice</button>
+        <button type="submit">Simpan</button>
+        
     </form>
 
     <script>

@@ -18,6 +18,9 @@ class NewItemController extends Controller
             'stock_amount' => 'nullable|numeric',
             'weight' => 'nullable|numeric'
         ]);
+    $validatedData['stock_amount'] = $validatedData['stock_amount'] ?? 0;
+    $validatedData['weight'] = $validatedData['weight'] ?? 0;
+
         Stock::create($validatedData);
 
         return redirect()->route('newitem.create')->with('success', 'Item created successfully.');
