@@ -3,24 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoice</title>
+    <title>Nota Jual</title>
+    <style>
+        .row::after {
+             content: "";
+             clear: both;
+             display: table;
+         }
+ 
+         .column {
+             width: 48%; /* Set the width of each column */
+             float: left; /* Float the columns to the left */
+             margin-right: 2%; /* Add some margin for spacing */
+             box-sizing: border-box; /* Include padding and border in the width */
+         }
+ 
+         .column:nth-child(even) {
+             margin-right: 0; /* Remove margin for the last column */
+         }
+     </style>
 </head>
 <body>
     <div style="text-align: center;">
-        <h2>Invoice</h2>
+        <h2>Nota Jual</h2>
+        <h1>UD Laut Biru Perkasa</h1>
     </div>
-    
-    <div style="text-align: center;">
-        <p>Warehouse Address: 123 Main Street, Cityville</p>
-        <p>{{ $date }}</p>
+<hr>
+<div class="row">
+    <div class="column">
+        <p>Alamat &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Komplek dermaga 3, Karangmulia, Tegalkamulyan, Kec. Cilacap Sel., Kabupaten Cilacap, Jawa Tengah</p>
+        <p>No Telp &nbsp;&nbsp;&nbsp;&nbsp;: 081394060849</p>
+        <p>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: udlautbiruperkasa@gmail.com</p>
+        <p>Rekening&nbsp;&nbsp;: 0961735555(BCA) <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;a/n Anggi Wisnubintarto</p>
     </div>
-
+    <div class="column">
+        <p>Hari & Tanggal &nbsp;&nbsp;&nbsp;: {{ $date }}</p>
+        <p>Nama/Perusahaan : </p>
+    </div>
+</div>
     <hr>
-
-    <div style="text-align: center;">
-        <p><strong>Beli / Jual</strong></p>
-    </div>
-
     <table style="width: 100%; border-collapse: collapse;">
         <thead>
             <tr>
@@ -43,7 +64,11 @@
     <hr>
 
     <div style="text-align: right;">
+        <p><strong>Total Berat:</strong> <span id="totalWeiht">{{ $totalweight }}KG</span></p>
         <p><strong>Total:</strong> <span id="totalAmount">{{$total}}</span></p>
+    </div>
+    <div>
+        <p style="margin-top: 20px;">Hormat Kami</p>
     </div>
 </body>
 </html>

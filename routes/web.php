@@ -79,6 +79,8 @@ Route::get('/faq', function () {
 Auth::routes();
 Route::middleware(['auth'])->group(function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+});
 Route::get('/baru', [NewItemController::class, 'create'])->name('newitem.create');
 Route::post('/baru', [NewItemController::class, 'store'])->name('newitem.store');
 Route::get('/datastok', [StockController::class, 'currentStock'])->name('stock.current');
@@ -96,5 +98,3 @@ Route::get('/pdf/outgoing-log', [PDFController::class, 'generateOutgoingLogPDF']
 Route::post('/pdf/in_invoice', [PDFController::class, 'generateInInvoice'])->name('pdf.in_invoice');
 Route::post('/pdf/out_invoice', [PDFController::class, 'generateOutInvoice'])->name('pdf.out_invoice');
 Route::get('/valuasi', [StockController::class, 'valuation'])->name('stock.valuation');
-});
-

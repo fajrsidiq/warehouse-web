@@ -82,7 +82,7 @@
             entryIndex++;
         });
         document.querySelector('#generate-in-invoice').addEventListener('click', function() {
-            const currentDate = new Date().toLocaleDateString();
+            const currentDate = new Date().toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: '2-digit', day: '2-digit' });
             const entryData = [];
             document.querySelectorAll('.entry').forEach((entry, index) => {
                 const itemName = entry.querySelector('select[name^="entries["]').value;
