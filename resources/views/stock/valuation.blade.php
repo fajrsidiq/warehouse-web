@@ -36,7 +36,7 @@
     </table>
 
     <div style="display: flex; justify-content: flex-end; align-items: center; padding-top: 10px; padding-right: 40px;">
-        <h4 style="margin: 0;">Total Valuation:</h4>
+        <h4 style="margin: 0;">Total Valuasi:</h4>
         <p id="total-valuation" style="margin: 0; margin-left: 10px; font-size: 20px;">Rp 0.00</p>
     </div>
     
