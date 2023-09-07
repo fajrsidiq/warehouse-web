@@ -116,7 +116,7 @@
                         <h4 class="fade-in">Sterofoam dan Ice</h4>
                     </div>
                     <div class="row center">
-                        <div class="col-md-4 mx-auto">
+                        <div class="col-md-4 ">
                             <div class="text-center">
                                 <img src="/img/sterofoam.png" width="100%" alt="" class="fade-in">
                             </div>

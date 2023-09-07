@@ -217,41 +217,29 @@
     </div>
 </div>
 
-<!-- Untuk Piagam atau Penghargaan yang telah diraih
+<!-- Untuk Piagam atau Penghargaan yang telah diraih -->
 <div class="bg-light">
     <div class="container py-5">
         <div class="text-dark text-center mb-5">
-            <h4 class="">Prestasi Kami</h4>
+            <h2 class="">Prestasi Kami</h2>
         </div>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4 mx-auto">
                 <div class="text-center">
-                    <img src="/img/coldstorage2.jpg" width="100%" alt="">
-                    <h5>Prestasi 1</h5>
+                    <img src="/img/piagam1.png" width="100%" alt="" class="fade-in">
+                    <h5>Piagam Penghargaan Sebagai Peringkat Pertama Penggunaan Jasa Terbaik Semester I Tahun 2020</h5>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4 mx-auto">
                 <div class="text-center">
-                    <img src="/img/coldstorage2.jpg" width="100%" alt="">
-                    <h5>Prestasi 2</h5>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="text-center">
-                    <img src="/img/coldstorage2.jpg" width="100%" alt="">
-                    <h5>Prestasi 3</h5>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="text-center">
-                    <img src="/img/coldstorage2.jpg" width="100%" alt="">
-                    <h5>Prestasi 4</h5>
+                    <img src="/img/piagam2.png" width="100%" alt="" class="fade-in">
+                    <h5>Piagam Penghargaan Penggunaan Jasa Terbaik Pertama Semester II Tahun 2021</h5>
                 </div>
             </div>
         </div>
     </div>
 </div>
--->
+
 
 <div class="container mt-5 fade-in">
     <div class="text-center">
