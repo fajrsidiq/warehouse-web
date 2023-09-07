@@ -21,7 +21,7 @@
                 </div>
                 <div>
                     <label for="stock_in_amount">Jumlah Ikan:</label>
-                    <input type="number" name="entries[0][stock_in_amount]" min="1" required>
+                    <input type="number" name="entries[0][stock_in_amount]" min="0" required>
                 </div>
                 <div>
                     <label for="weight">Berat:</label>
@@ -61,7 +61,7 @@
                 </div>
                 <div>
                     <label for="stock_in_amount">Jumlah Ikan:</label>
-                    <input type="number" name="entries[${entryIndex}][stock_in_amount]" min="1" required>
+                    <input type="number" name="entries[${entryIndex}][stock_in_amount]" min="0" required>
                 </div>
                 <div>
                     <label for="weight">Berat:</label>
