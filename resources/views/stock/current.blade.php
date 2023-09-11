@@ -11,14 +11,15 @@
     <a href="{{ route('stock.out') }}" class="button-link">
         <button>Stok Keluar</button>
     </a>
-        <button type="button" id="pdf-button">print pdf</button>
-        
+    <button type="button" id="pdf-button">print pdf</button>
+
     <table class="table">
         <thead>
             <tr>
                 <th>Nama Ikan</th>
                 <th>Jumlah Ikan</th>
                 <th>Berat</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -27,6 +28,10 @@
                     <td>{{ $stock->item_name }}</td>
                     <td>{{ $stock->stock_amount }}</td>
                     <td>{{ $stock->weight }} kg </td>
+                    <td>
+                        <a href="{{ route('stocks.edit', $stock) }}" class="btn btn-primary">Edit</a>
+                    </td>
+
                 </tr>
             @endforeach
         </tbody>

@@ -98,3 +98,7 @@ Route::get('/pdf/outgoing-log', [PDFController::class, 'generateOutgoingLogPDF']
 Route::post('/pdf/in_invoice', [PDFController::class, 'generateInInvoice'])->name('pdf.in_invoice');
 Route::post('/pdf/out_invoice', [PDFController::class, 'generateOutInvoice'])->name('pdf.out_invoice');
 Route::get('/valuasi', [StockController::class, 'valuation'])->name('stock.valuation');
+Route::get('/stok/{stock}/edit', [StockController::class, 'edit'])->name('stocks.edit');
+Route::patch('/stok/{stock}', [StockController::class, 'update'])->name('stocks.update');
+
+

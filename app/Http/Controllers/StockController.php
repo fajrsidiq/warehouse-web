@@ -15,6 +15,27 @@ class StockController extends Controller
         return view('stock.current', compact('stocks'));
     }
 
+    public function edit(Stock $stock)
+    {
+        return view('stock.edit', compact('stock'));
+    }
+
+    public function update(Request $request, Stock $stock)
+    {
+        $request->validate([
+            'item_name' => 'required|string|max:255',
+        ]);
+
+        $stock->update([
+            'item_name' => $request->input('item_name'),
+        ]);
+
+        StockIn::where('item_name', $stock->getOriginal('item_name'))
+            ->update(['item_name' => $request->input('item_name')]);
+
+        return redirect()->route('stock.current')->with('success', 'Item name updated successfully.');
+    }
+
     public function valuation()
     {
         $stocks = Stock::orderBy('item_name')->get();
