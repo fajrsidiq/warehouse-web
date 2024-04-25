@@ -14,18 +14,13 @@
 
         .column {
             width: 48%;
-            /* Set the width of each column */
             float: left;
-            /* Float the columns to the left */
             margin-right: 2%;
-            /* Add some margin for spacing */
             box-sizing: border-box;
-            /* Include padding and border in the width */
         }
 
         .column:nth-child(even) {
             margin-right: 0;
-            /* Remove margin for the last column */
         }
     </style>
 </head>

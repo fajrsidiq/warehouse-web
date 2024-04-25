@@ -1,24 +1,29 @@
-<!-- resources/views/pdf/incoming_log.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Data Stok Masuk</title>
-    <!-- Add your styles here if needed -->
     <style>
+        h1 {
+            text-align: center;
+        }
+
         .pdf-table {
             border-collapse: collapse;
             width: 100%;
         }
-    
-        .pdf-table th, .pdf-table td {
+
+        .pdf-table th,
+        .pdf-table td {
             border: 1px solid #000;
             padding: 8px;
             text-align: left;
         }
     </style>
-    
+
 </head>
+
 <body>
     <h1>Data Stok Masuk</h1>
     <table id="log-table" class="pdf-table">
@@ -46,4 +51,5 @@
         </tbody>
     </table>
 </body>
+
 </html>
