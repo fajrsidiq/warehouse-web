@@ -74,7 +74,61 @@ Route::get('/faq', function () {
     //return view('home.index');
     return view('home.layouts.wrapper', $data);
 });
+Route::get('/homepage', function () {
+    $data = [
+        'content' => 'home/eng/home/index'
+    ];
+    //return view('home.index');
+    return view('home.eng.layouts.wrapper', $data);
+});
 
+Route::get('/aboutus', function () {
+    $data = [
+        'content' => 'home/eng/about/index'
+    ];
+    //return view('home.index');
+    return view('home.eng.layouts.wrapper', $data);
+});
+
+Route::get('/services', function () {
+    $data = [
+        'content' => 'home/eng/coldstorage/index'
+    ];
+    return view('home.eng.layouts.wrapper', $data);
+});
+
+
+Route::get('/fish', function () {
+    $data = [
+        'content' => 'home/eng/ikan/index'
+    ];
+    //return view('home.index');
+    return view('home.eng.layouts.wrapper', $data);
+});
+
+Route::get('/delivery', function () {
+    $data = [
+        'content' => 'home/eng/kirim/index'
+    ];
+    return view('home.eng.layouts.wrapper', $data);
+});
+
+
+Route::get('/contactus', function () {
+    $data = [
+        'content' => 'home/eng/contact/index'
+    ];
+    //return view('home.index');
+    return view('home.eng.layouts.wrapper', $data);
+});
+
+Route::get('/faqs', function () {
+    $data = [
+        'content' => 'home/eng/faq/index'
+    ];
+    //return view('home.index');
+    return view('home.eng.layouts.wrapper', $data);
+});
 
 Auth::routes();
 Route::middleware(['auth'])->group(function () {
