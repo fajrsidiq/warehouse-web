@@ -15,10 +15,10 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Nama Ikan</th>
-                        <th>Berat (kg)</th>
-                        <th>Harga</th>
-                        <th>Valuasi</th>
+                        <th>Nama Barang</th>
+                        <th>Berat/Kg</th>
+                        <th>Harga/Kg</th>
+                        <th>Harga  Total/Barang</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -40,7 +40,7 @@
             </table>
         
             <div style="display: flex; justify-content: flex-end; align-items: center; padding-top: 10px; padding-right: 40px;">
-                <h4 style="margin: 0;">Total Valuasi:</h4>
+                <h4 style="margin: 0;">Total Harga Barang:</h4>
                 <p id="total-valuation" style="margin: 0; margin-left: 10px; font-size: 20px;">Rp 0.00</p>
             </div>
             <button id="calculateValuation" class="btn btn-primary">Hitung Valuasi</button>

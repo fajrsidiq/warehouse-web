@@ -23,7 +23,7 @@
                             <th>Nama Barang</th>
                             <th>Jumlah/Pcs</th>
                             <th>Berat/Kg</th>
-                            <th>Harga</th>
+                            <th>Harga/Kg</th>
                             <th>Catatan</th>
                             <th></th>
                         </tr>

@@ -40,7 +40,7 @@
                                         </div>
                                     </div>
                                     <div class="row mb-3">
-                                        <label for="price" class="col-md-4 col-form-label text-md-end">Harga:</label>
+                                        <label for="price" class="col-md-4 col-form-label text-md-end">Harga/Kg:</label>
                                         <div class="col-md-6">
                                             <input type="number" name="entries[0][price]" step="0.01" min="0" required>
                                         </div>
@@ -55,7 +55,7 @@
                             </div>
                             <div class="col-md-8 offset-md-4">
                                 <button type="button" id="add-entry">+</button>
-                                <button type="button" id="generate-out-invoice">Print Invoice</button>
+                                <button type="button" id="generate-out-invoice">Print Kwitansi</button>
                                 <button type="submit">Simpan</button>
                             </div> 
                         </form>
@@ -97,7 +97,7 @@
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label for="price" class="col-md-4 col-form-label text-md-end">Harga:</label>
+                    <label for="price" class="col-md-4 col-form-label text-md-end">Harga/Kg:</label>
                     <div class="col-md-6">
                         <input type="number" name="entries[${entryIndex}][price]" step="0.01" min="0" required>
                     </div>

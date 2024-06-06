@@ -209,7 +209,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
 // Routes accessible to all authenticated users
 Route::middleware(['auth'])->group(function () {
-    Route::get('/datastok', [StockController::class, 'currentStock'])->name('stock.current');
+    Route::get('/dashboard', [StockController::class, 'currentStock'])->name('stock.current');
     Route::get('/datamasuk', [StockController::class, 'incomingLog'])->name('logs.incoming');
     Route::get('/datakeluar', [StockController::class, 'outgoingLog'])->name('logs.outgoing');
     Route::get('/pdf/current_stock', [PDFController::class, 'generateCurrentStock'])->name('pdf.current_stock');

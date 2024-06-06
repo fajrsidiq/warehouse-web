@@ -33,7 +33,7 @@ class StockChart
     \Log::info($labels);
 
     return $this->chart->pieChart()
-        ->setTitle('Data Stok')
+        ->setTitle('Diagram Data Stok')
         ->addData($data)
         ->setLabels($labels);
 }

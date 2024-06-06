@@ -4,7 +4,7 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <h2>Delete History</h2>
+                <h2>Riwayat Penghapusan</h2>
             </div>
             <div class="card-body">
                 <table id="delete-history-table" class="table">
@@ -13,7 +13,7 @@
                             <th>Nama Barang</th>
                             <th>Jumlah Stok</th>
                             <th>Berat/Kg</th>
-                            <th>Harga</th>
+                            <th>Harga/Kg</th>
                             <th>Catatan</th>
                             <th>Tipe</th>
                             <th>Waktu Penghapusan</th>

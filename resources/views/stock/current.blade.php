@@ -4,11 +4,11 @@
     <div class="container mt-4">
         <div class="card mb-4">
             <div class="card-header">
-                <h4>Keluar Masuk Barang dalam 30 Hari terakhir</h4>
+                <h4>Statistik Keluar Masuk Barang dalam 30 Hari terakhir</h4>
 
                 <div class="row mb-3">
                     <div class="col-12">
-                        <h5>Barang Keluar Terbanyak</h5>
+                        <h5>Barang Keluar Paling Banyak</h5>
                     </div>
                     @if ($mostStockedOut)
                         <div class="col-6">
@@ -25,7 +25,7 @@
                 </div>
                 <div class="row mb-3">
                     <div class="col-12">
-                        <h5>Barang Keluar Tersedikit</h5>
+                        <h5>Barang Keluar Paling Sedikit</h5>
                     </div>
                     @if ($leastStockedOut)
                         <div class="col-6">
@@ -42,7 +42,7 @@
                 </div>
                 <div class="row mb-3">
                     <div class="col-12">
-                        <h5>Barang Masuk Terbanyak</h5>
+                        <h5>Barang Masuk Paling Banyak</h5>
                     </div>
                     @if ($mostStockedIn)
                         <div class="col-6">
@@ -59,7 +59,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <h5>Barang Masuk Tersedikit</h5>
+                        <h5>Barang Masuk Paling Sedikit</h5>
                     </div>
                     @if ($leastStockedIn)
                         <div class="col-6">
