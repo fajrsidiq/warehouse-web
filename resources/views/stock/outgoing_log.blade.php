@@ -1,41 +1,58 @@
 @extends('layouts.app')
 
 @section('content')
-    <h2>Data Stok Keluar</h2>
-
-    <form action="{{ route('stockout.search') }}" method="GET">
-        <label for="date">Cari Tanggal (yyyy-mm-dd):</label>
-        <input type="text" id="date" name="date" placeholder="yyyy-mm-dd" required>
-        <button type="submit">Cari</button>
-    </form>
-    <div>
-        <button id="pdf-button" class="btn btn-primary">Print PDF</button>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>Data Stok Keluar</h2>
+            </div>
+            <div class="card-body">
+                <form action="{{ route('stockout.search') }}" method="GET">
+                    <label for="date">Cari Tanggal (yyyy-mm-dd):</label>
+                    <input type="text" id="date" name="date" placeholder="yyyy-mm-dd" required>
+                    <button type="submit">Cari</button>
+                </form>
+                <div>
+                    <button id="pdf-button" class="btn btn-primary">Print PDF</button>
+                </div>
+            
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Nama Barang</th>
+                            <th>Jumlah/Pcs</th>
+                            <th>Berat/Kg</th>
+                            <th>Harga</th>
+                            <th>Catatan</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($outgoingLogs as $log)
+                            <tr>
+                                <td>{{ $log->created_at }}</td>
+                                <td>{{ $log->item_name }}</td>
+                                <td>{{ $log->stock_out_amount }}</td>
+                                <td>{{ $log->weight }}</td>
+                                <td>{{ $log->price }}</td>
+                                <td>{{ $log->notes }}</td>
+                                <td>
+                                    <form action="{{ route('logs.outgoing.delete', $log->id) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger btn-sm"
+                                                onclick="return confirm('Are you sure you want to delete this log entry?')">Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Tanggal</th>
-                <th>Nama Ikan</th>
-                <th>Jumlah Ikan</th>
-                <th>Berat</th>
-                <th>Harga</th>
-                <th>Catatan</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($outgoingLogs as $log)
-                <tr>
-                    <td>{{ $log->created_at }}</td>
-                    <td>{{ $log->item_name }}</td>
-                    <td>{{ $log->stock_out_amount }}</td>
-                    <td>{{ $log->weight }}</td>
-                    <td>{{ $log->price }}</td>
-                    <td>{{ $log->notes }}</td>
-                </tr>
-            @endforeach
-        </tbody>
-    </table>
     <script>
         document.getElementById('pdf-button').addEventListener('click', function () {
             const currentUrl = window.location.href;

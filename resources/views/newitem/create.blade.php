@@ -1,22 +1,35 @@
 @extends('layouts.app')
 
 @section('content')
-    <h2>Ikan Baru</h2>
-
-    @if(session('success'))
+    @if (session('success'))
         <div class="alert alert-success">
             {{ session('success') }}
         </div>
     @endif
 
-    <form action="{{ route('newitem.store') }}" method="POST">
-        @csrf
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Ikan Baru</h2>
+                    </div>
+                    <div class="card-body">
+                        <form action="{{ route('newitem.store') }}" method="POST">
+                            @csrf
 
-        <div class="form-group">
-            <label for="item_name">Nama Ikan    :</label>
-            <input type="text" name="item_name" id="item_name" required>
+                            <div class="form-group row mb-3">
+                                <label for="item_name">Nama Ikan :</label>
+                                <div>
+                                    <input type="text" name="item_name" id="item_name" required>
+                                </div>
+                            </div>
+
+                            <button type="submit">Tambah Item</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <button type="submit">Tambah Item</button>
-    </form>
+    </div>
 @endsection

@@ -50,6 +50,7 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="/">Bahasa Indonesia</a></li>
                             <li><a class="dropdown-item" href="/homepage">English</a></li>
+                            <li><a class="dropdown-item" href="/主页">中文</a></li>
                         </ul>
                     </li>
                 </ul>

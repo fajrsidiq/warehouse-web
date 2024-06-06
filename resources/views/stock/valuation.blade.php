@@ -6,41 +6,48 @@
         font-size: 20px;
     }
 </style>
-    <h2>Valuasi Ikan</h2>
-
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Nama Ikan</th>
-                <th>Berat (kg)</th>
-                <th>Harga</th>
-                <th>Valuasi</th>
-            </tr>
-        </thead>
-        <tbody>
-            @php
-                $totalValuation = 0;
-            @endphp
-
-            @foreach ($stocks as $stock)
-                <tr>
-                    <td>{{ $stock->item_name }}</td>
-                    <td>{{ $stock->weight }} kg</td>
-                    <td>
-                        <input type="number" step="0.01" name="price" id="price{{ $stock->id }}" class="form-control">
-                    </td>
-                    <td id="valuation{{ $stock->id }}">0.00</td>
-                </tr>
-            @endforeach
-        </tbody>
-    </table>
-
-    <div style="display: flex; justify-content: flex-end; align-items: center; padding-top: 10px; padding-right: 40px;">
-        <h4 style="margin: 0;">Total Valuasi:</h4>
-        <p id="total-valuation" style="margin: 0; margin-left: 10px; font-size: 20px;">Rp 0.00</p>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2>Valuasi Ikan</h2>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nama Ikan</th>
+                        <th>Berat (kg)</th>
+                        <th>Harga</th>
+                        <th>Valuasi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @php
+                        $totalValuation = 0;
+                    @endphp
+        
+                    @foreach ($stocks as $stock)
+                        <tr>
+                            <td>{{ $stock->item_name }}</td>
+                            <td>{{ $stock->weight }} kg</td>
+                            <td>
+                                <input type="number" step="0.01" name="price" id="price{{ $stock->id }}" class="form-control">
+                            </td>
+                            <td id="valuation{{ $stock->id }}">0.00</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        
+            <div style="display: flex; justify-content: flex-end; align-items: center; padding-top: 10px; padding-right: 40px;">
+                <h4 style="margin: 0;">Total Valuasi:</h4>
+                <p id="total-valuation" style="margin: 0; margin-left: 10px; font-size: 20px;">Rp 0.00</p>
+            </div>
+            <button id="calculateValuation" class="btn btn-primary">Hitung Valuasi</button>
+        </div>
     </div>
-    
-    <button id="calculateValuation" class="btn btn-primary">Hitung Valuasi</button>
+</div>
+
 
     <script>
         function formatMoney(number) {

@@ -17,40 +17,40 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::is('homepage') ? 'menu-active' : ''}}" aria-current="page" href="/homepage">Home</a>
+                        <a class="nav-link {{ Request::is('homepage') ? 'menu-active' : ''}}" aria-current="page" href="/主页">主页</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::is('about') ? 'menu-active' : ''}}" href="/aboutus">About</a>
+                        <a class="nav-link {{ Request::is('about') ? 'menu-active' : ''}}" href="/关于我们">关于</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::is('coldstorage') ? 'menu-active' : ''}}" href="/services">Coldstorage</a>   
+                        <a class="nav-link {{ Request::is('coldstorage') ? 'menu-active' : ''}}" href="/服务">冷藏</a>   
                     </li>                    
 
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::is('ikan') ? 'menu-active' : ''}}" href="/fish">Fishes</a>
+                        <a class="nav-link {{ Request::is('ikan') ? 'menu-active' : ''}}" href="/鱼类">鱼类</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::is('kirim') ? 'menu-active' : '' }}" href="/delivery">Delivery</a>
+                        <a class="nav-link {{ Request::is('kirim') ? 'menu-active' : '' }}" href="/送货">送货</a>
                     </li>   
 
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::is('contact') ? 'menu-active' : ''}}" href="/contactus">Contact</a>
+                        <a class="nav-link {{ Request::is('contact') ? 'menu-active' : ''}}" href="/联系我们">联系我们</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::is('faq') ? 'menu-active' : ''}}" href="/faqs">FAQ</a>
+                        <a class="nav-link {{ Request::is('faq') ? 'menu-active' : ''}}" href="/常见问题解答">常见问题解答</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Language <i class="fas fa-language"></i>
+                            中文 <i class="fas fa-language"></i>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="/主页">中文</a></li>
                             <li><a class="dropdown-item" href="/">Bahasa Indonesia</a></li>
                             <li><a class="dropdown-item" href="/homepage">English</a></li>
-                            <li><a class="dropdown-item" href="/主页">中文</a></li>
                         </ul>
                     </li>
                 </ul>
