@@ -21,7 +21,6 @@ class StockController extends Controller
         $stocks = Stock::orderBy('item_name')->get();
         $date = Carbon::now()->subDays(30);
 
-        // Query to get the most stock out item in the last 30 days
         $mostStockedOut = StockOut::select('item_name', DB::raw('SUM(weight) as total_weight'))
             ->where('created_at', '>=', $date)
             ->groupBy('item_name')
@@ -85,15 +84,31 @@ class StockController extends Controller
     public function searchIncoming(Request $request)
     {
         $request->validate([
-            'date' => 'required|date_format:Y-m-d',
+            'date' => 'required|regex:/^\d{4}(-\d{2}(-\d{2})?)?$/',
         ]);
-
+    
         $searchDate = $request->input('date');
-
-        $incomingLogs = StockIn::whereDate('created_at', $searchDate)->orderByDesc('created_at')->get();
-
+    
+        if (preg_match('/^\d{4}$/', $searchDate)) {
+            $incomingLogs = StockIn::whereYear('created_at', $searchDate)
+                ->orderByDesc('created_at')
+                ->get();
+        } elseif (preg_match('/^\d{4}-\d{2}$/', $searchDate)) {
+            $incomingLogs = StockIn::whereYear('created_at', substr($searchDate, 0, 4))
+                ->whereMonth('created_at', substr($searchDate, 5, 2))
+                ->orderByDesc('created_at')
+                ->get();
+        } elseif (preg_match('/^\d{4}-\d{2}-\d{2}$/', $searchDate)) {
+            $incomingLogs = StockIn::whereDate('created_at', $searchDate)
+                ->orderByDesc('created_at')
+                ->get();
+        } else {
+            $incomingLogs = collect();
+        }
+    
         return view('stock.incoming_log', compact('incomingLogs', 'searchDate'));
     }
+    
 
     public function outgoingLog()
     {
@@ -102,27 +117,35 @@ class StockController extends Controller
     }
 
     public function searchOutgoing(Request $request)
-    {
-        $request->validate([
-            'date' => 'required|date_format:Y-m-d',
-        ]);
+{
+    $request->validate([
+        'date' => 'required|regex:/^\d{4}(-\d{2}(-\d{2})?)?$/',
+    ]);
 
-        $searchDate = $request->input('date');
+    $searchDate = $request->input('date');
 
-        $outgoingLogs = StockOut::whereDate('created_at', $searchDate)->orderByDesc('created_at')->get();
-
-        return view('stock.outgoing_log', compact('outgoingLogs', 'searchDate'));
+    if (preg_match('/^\d{4}$/', $searchDate)) {
+        $outgoingLogs = StockOut::whereYear('created_at', $searchDate)
+            ->orderByDesc('created_at')
+            ->get();
+    } elseif (preg_match('/^\d{4}-\d{2}$/', $searchDate)) {
+        $outgoingLogs = StockOut::whereYear('created_at', substr($searchDate, 0, 4))
+            ->whereMonth('created_at', substr($searchDate, 5, 2))
+            ->orderByDesc('created_at')
+            ->get();
+    } elseif (preg_match('/^\d{4}-\d{2}-\d{2}$/', $searchDate)) {
+        $outgoingLogs = StockOut::whereDate('created_at', $searchDate)
+            ->orderByDesc('created_at')
+            ->get();
+    } else {
+        $outgoingLogs = collect();
     }
 
-    /**
-     * Remove the specified incoming log from storage and update stock.
-     *
-     * @param  \App\Models\StockIn  $log
-     * @return \Illuminate\Http\Response
-     */
+    return view('stock.outgoing_log', compact('outgoingLogs', 'searchDate'));
+}
+
     public function deleteIncomingLog(StockIn $log)
     {
-        // Store the current stock values
         $stock = Stock::where('item_name', $log->item_name)->first();
         
         if (!$stock) {
@@ -132,43 +155,32 @@ class StockController extends Controller
         $originalStockAmount = $stock->stock_amount;
         $originalWeight = $stock->weight;
 
-        // Update the stock amounts to revert the incoming log entry
         $stock->stock_amount -= $log->stock_in_amount;
         $stock->weight -= $log->weight;
 
-        // Validate the stock values to ensure they are not negative
         if ($stock->stock_amount < 0 || $stock->weight < 0) {
             return redirect()->route('logs.incoming')->with('error', 'Invalid operation. Stock cannot be negative.');
         }
 
-        // Save the updated stock
         $stock->save();
 
-        // Create a delete history record
         DeleteHistory::create([
             'item_name' => $log->item_name,
             'stock_in_amount' => $log->stock_in_amount,
             'weight' => $log->weight,
             'price' => $log->price,
             'notes' => $log->notes,
-            'type' => 'masuk', // Set the type to 'masuk' (incoming)
+            'type' => 'masuk', 
         ]);
 
-        // Delete the log entry
         $log->delete();
 
         return redirect()->route('logs.incoming')->with('success', 'Incoming log entry deleted successfully and stock updated!');
     }
 
-    /**
-     * Remove the specified outgoing log from storage and update stock.
-     *
-     * @param  \App\Models\StockOut  $log
-     * @return \Illuminate\Http\Response
-     */
+    
     public function deleteOutgoingLog(StockOut $log)
     {
-        // Store the current stock values
         $stock = Stock::where('item_name', $log->item_name)->first();
         
         if (!$stock) {
@@ -176,39 +188,31 @@ class StockController extends Controller
         }
 
         $originalStockAmount = $stock->stock_amount;
+        $originalWeight = $stock->weight;
 
-        // Update the stock amounts to revert the outgoing log entry
         $stock->stock_amount += $log->stock_out_amount;
+        $stock->weight += $log->weight;
 
-        // Validate the stock values to ensure they are not negative
         if ($stock->stock_amount < 0) {
             return redirect()->route('logs.outgoing')->with('error', 'Invalid operation. Stock cannot be negative.');
         }
 
-        // Save the updated stock
         $stock->save();
 
-        // Create a delete history record
         DeleteHistory::create([
             'item_name' => $log->item_name,
             'stock_in_amount' => $log->stock_out_amount,
             'weight' => $log->weight,
             'price' => $log->price,
             'notes' => $log->notes,
-            'type' => 'keluar', // Set the type to 'keluar' (outgoing)
+            'type' => 'keluar',
         ]);
 
-        // Delete the log entry
         $log->delete();
 
         return redirect()->route('logs.outgoing')->with('success', 'Outgoing log entry deleted successfully and stock updated!');
     }
 
-    /**
-     * Display a listing of the delete history.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function deleteHistory()
     {
         $deleteHistory = DeleteHistory::orderByDesc('created_at')->get();

@@ -25,12 +25,66 @@
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
         }
-        .nav-link{
+
+        .nav-link {
             font-size: 20px;
         }
+
         .table {
-        font-size: 20px;
-    }
+            font-size: 20px;
+        }
+
+        /* Ensure the card and table are responsive */
+        .card {
+            margin-bottom: 20px;
+            /* Add some space below the card */
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            /* Allow horizontal scroll */
+            -webkit-overflow-scrolling: touch;
+            /* Smooth scrolling on touch devices */
+        }
+
+        .table th {
+            word-wrap: break-word;
+            /* Allow long words to break */
+            white-space: nowrap;
+            /* Prevent text from wrapping to the next line */
+            max-width: 200px;
+            /* Set a max-width to table cells */
+            background-color: #00BFFF;
+            color: black;
+        }
+
+        .table td {
+            word-wrap: break-word;
+            /* Allow long words to break */
+            white-space: nowrap;
+            /* Prevent text from wrapping to the next line */
+            max-width: 200px;
+            /* Set a max-width to table cells */
+        }
+
+        @media (max-width: 768px) {
+            .card-header h2 {
+                font-size: 1.5rem;
+                /* Adjust header size for smaller screens */
+            }
+
+            .table {
+                font-size: 0.875rem;
+                /* Make table text smaller on mobile */
+            }
+
+            .table th,
+            .table td {
+                white-space: normal;
+                /* Allow text to wrap on smaller screens */
+            }
+
+        }
     </style>
 </head>
 
@@ -52,36 +106,45 @@
                     <ul class="navbar-nav me-auto">
                         @if (Auth::check())
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('stock.current') }}">{{ __('Dashboard') }}</a>                            
+                                <a class="nav-link" href="{{ route('stock.current') }}">{{ __('Dashboard') }}</a>
                             </li>
                             @if (Auth::user()->role === 'admin')
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Input Data <i class="fas fa-language"></i>
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Input Data 1 <i class="fas fa-language"></i>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="{{ route('newitem.create') }}">Input Jenis Baru</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('stock.in') }}">Input Data Masuk</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('stock.out') }}">Input Data Keluar</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('newitem.create') }}">Input Jenis
+                                                Baru</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('stock.in') }}">Input Data Masuk</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="{{ route('stock.out') }}">Input Data
+                                                Keluar</a></li>
                                     </ul>
                                 </li>
                             @endif
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Data Stok <i class="fas fa-language"></i>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="{{ route('logs.incoming') }}">Tabel Data Masuk</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('logs.outgoing') }}">Tabel Data Keluar</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('delete_history.index') }}">Riwayat Penghapusan</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('logs.incoming') }}">Tabel Data
+                                            Masuk</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('logs.outgoing') }}">Tabel Data
+                                            Keluar</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('delete_history.index') }}">Riwayat
+                                            Penghapusan</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('stock.valuation') }}">{{ __('Valuasi Nilai') }}</a>
+                                <a class="nav-link"
+                                    href="{{ route('stock.valuation') }}">{{ __('Valuasi Nilai') }}</a>
                             </li>
                         @endif
                     </ul>
-                    
+
 
 
 
@@ -119,7 +182,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4" style="overflow-x: auto;">
             @yield('content')
         </main>
     </div>

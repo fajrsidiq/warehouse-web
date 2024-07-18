@@ -18,6 +18,7 @@ class StockOutController extends Controller
         $entries = $request->input('entries');
 
         foreach ($entries as $entry) {
+            $entry['stock_out_amount'] = isset($entry['stock_out_amount']) ? $entry['stock_out_amount'] : 0;
             $validatedData = validator($entry, [
                 'item_name' => 'required',
                 'stock_out_amount' => 'required|numeric',

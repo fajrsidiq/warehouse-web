@@ -21,7 +21,7 @@
                                         <label for="item_name" class="col-md-4 col-form-label text-md-end">Nama Barang:</label>
                                         <div class="col-md-6">
                                             <select name="entries[0][item_name]" required>
-                                                @foreach ($items as $item)
+                                                @foreach ($items->sortBy('item_name') as $item)
                                                     <option value="{{ $item->item_name }}">{{ $item->item_name }}</option>
                                                 @endforeach
                                             </select>
@@ -30,7 +30,7 @@
                                     <div class="row mb-3">
                                         <label for="stock_out_amount" class="col-md-4 col-form-label text-md-end">Jumlah/Pcs:</label>
                                         <div class="col-md-6">
-                                            <input type="number" name="entries[0][stock_out_amount]" min="1" required>
+                                            <input type="number" name="entries[0][stock_out_amount]" min="0">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -87,7 +87,7 @@
                 <div class="row mb-3">
                     <label for="stock_out_amount" class="col-md-4 col-form-label text-md-end">Jumlah/Pcs:</label>
                     <div class="col-md-6">
-                        <input type="number" name="entries[${entryIndex}][stock_out_amount]" min="1" required>
+                        <input type="number" name="entries[${entryIndex}][stock_out_amount]" min="0">
                     </div>
                 </div>
                 <div class="row mb-3">

@@ -85,14 +85,14 @@
                     {!! $chart->container() !!}
                 </div>
             </div>
-            <div class="card-body">
+            <div class="card-body table-responsive">
                 <button type="button" id="pdf-button" style="margin-bottom: 10px;">print tabel ke pdf</button>
-                <table class="table">
-                    <thead>
+                <table class="table table-striped">
+                    <thead class="table-primary">
                         <tr>
-                            <th>Nama Barag</th>
+                            <th>Nama Barang</th>
                             <th>Jumlah Stok</th>
-                            <th>Berat/Kg</th>                            
+                            <th>Berat/Kg</th>
                         </tr>
                     </thead>
                     <tbody>

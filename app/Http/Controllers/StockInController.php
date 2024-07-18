@@ -18,6 +18,7 @@ class StockInController extends Controller
     {
         $entries = $request->input('entries');
         foreach ($entries as $entry) {
+            $entry['stock_in_amount'] = isset($entry['stock_in_amount']) ? $entry['stock_in_amount'] : 0;
             $validatedData = validator($entry, [
                 'item_name' => 'required',
                 'stock_in_amount' => 'required|numeric',
@@ -25,6 +26,7 @@ class StockInController extends Controller
                 'price' => 'required|numeric',
                 'notes' => 'nullable|string',
             ])->validate();
+            
             StockIn::create($validatedData);
             $stock = Stock::where('item_name', $entry['item_name'])->first();
             $stock->stock_amount += $entry['stock_in_amount'];
