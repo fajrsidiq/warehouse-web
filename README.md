@@ -90,11 +90,3 @@ Masing-masing view ini dirancang untuk memberikan antarmuka yang jelas dan terst
     ```bash
     php artisan serve
     ```
-
-## Kontribusi
-
-Silakan buka issue atau buat pull request untuk berkontribusi pada proyek ini.
-
-## Lisensi
-
-Aplikasi ini dilisensikan di bawah [MIT License](LICENSE).
